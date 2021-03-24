@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="relationship-example-16"/>
+  <meta>
+    <profile value="https://liberaliscomputing.github.io/pedigree-fhir-ig/StructureDefinition/relationship"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 16</p><p></p><p><b>code</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/v3-RoleCode FAMMEMB}">family member</span></p><p><b>subject</b>: <a href="Patient-individual-example-5.html">Generated Summary: id: 5; gender: female</a></p><p><b>focus</b>: <a href="Patient-individual-example-1.html">Generated Summary: id: 1; gender: female; birthDate: 2019-06-15</a></p><p><b>value</b>: <span title="Codes: ">biological parent</span></p></div>
+  </text>
+  <identifier>
+    <system value="urn:pedigree-fhir-ig:unique-string/relationship"/>
+    <value value="16"/>
+  </identifier>
+  <status value="final"/>
+  <code>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
+      <code value="FAMMEMB"/>
+      <display value="family member"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/individual-example-5"/>
+  </subject>
+  <focus>
+    <reference value="Patient/individual-example-1"/>
+  </focus>
+  <valueCodeableConcept>
+    <coding>
+      <code value="REL:003"/>
+      <display value="biological parent"/>
+    </coding>
+  </valueCodeableConcept>
+</Observation>

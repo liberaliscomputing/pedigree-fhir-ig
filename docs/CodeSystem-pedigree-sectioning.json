@@ -1,0 +1,45 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "pedigree-sectioning",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system https://liberaliscomputing.github.io/pedigree-fhir-ig/CodeSystem/pedigree-sectioning defines many codes, of which the following are a subset:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">proband<a name=\"pedigree-sectioning-proband\"> </a></td><td>proband</td></tr><tr><td style=\"white-space:nowrap\">individual<a name=\"pedigree-sectioning-individual\"> </a></td><td>individual</td></tr><tr><td style=\"white-space:nowrap\">relationship<a name=\"pedigree-sectioning-relationship\"> </a></td><td>relationship</td></tr><tr><td style=\"white-space:nowrap\">reason-collected<a name=\"pedigree-sectioning-reason-collected\"> </a></td><td>reason collected</td></tr></table></div>"
+  },
+  "url": "https://liberaliscomputing.github.io/pedigree-fhir-ig/CodeSystem/pedigree-sectioning",
+  "version": "0.1.0",
+  "name": "PedigreeSectioning",
+  "title": "Pedigree Sectioning Code System",
+  "status": "draft",
+  "date": "2021-03-24T18:22:36-04:00",
+  "contact": [
+    {
+      "name": "Meen Chul Kim",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "meenchul@d3b.center",
+          "use": "work"
+        }
+      ]
+    }
+  ],
+  "content": "fragment",
+  "concept": [
+    {
+      "code": "proband",
+      "display": "proband"
+    },
+    {
+      "code": "individual",
+      "display": "individual"
+    },
+    {
+      "code": "relationship",
+      "display": "relationship"
+    },
+    {
+      "code": "reason-collected",
+      "display": "reason collected"
+    }
+  ]
+}

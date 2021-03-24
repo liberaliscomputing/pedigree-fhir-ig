@@ -1,0 +1,41 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "life-status",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system https://liberaliscomputing.github.io/pedigree-fhir-ig/CodeSystem/life-status defines many codes, of which the following are a subset:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">alive<a name=\"life-status-alive\"> </a></td><td>alive</td></tr><tr><td style=\"white-space:nowrap\">deceased<a name=\"life-status-deceased\"> </a></td><td>deceased</td></tr><tr><td style=\"white-space:nowrap\">unborn<a name=\"life-status-unborn\"> </a></td><td>unborn</td></tr></table></div>"
+  },
+  "url": "https://liberaliscomputing.github.io/pedigree-fhir-ig/CodeSystem/life-status",
+  "version": "0.1.0",
+  "name": "LifeStatus",
+  "title": "Life Status Code System",
+  "status": "draft",
+  "date": "2021-03-24T18:22:36-04:00",
+  "contact": [
+    {
+      "name": "Meen Chul Kim",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "meenchul@d3b.center",
+          "use": "work"
+        }
+      ]
+    }
+  ],
+  "content": "fragment",
+  "concept": [
+    {
+      "code": "alive",
+      "display": "alive"
+    },
+    {
+      "code": "deceased",
+      "display": "deceased"
+    },
+    {
+      "code": "unborn",
+      "display": "unborn"
+    }
+  ]
+}

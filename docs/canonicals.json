@@ -1,0 +1,79 @@
+[
+  {
+    "id": "life-status",
+    "type": "CodeSystem",
+    "url": "https://liberaliscomputing.github.io/pedigree-fhir-ig/CodeSystem/life-status",
+    "version": "0.1.0",
+    "name": "LifeStatus"
+  },
+  {
+    "id": "pedigree-sectioning",
+    "type": "CodeSystem",
+    "url": "https://liberaliscomputing.github.io/pedigree-fhir-ig/CodeSystem/pedigree-sectioning",
+    "version": "0.1.0",
+    "name": "PedigreeSectioning"
+  },
+  {
+    "id": "relationship",
+    "type": "CodeSystem",
+    "url": "https://liberaliscomputing.github.io/pedigree-fhir-ig/CodeSystem/relationship",
+    "version": "0.1.0",
+    "name": "Relationship"
+  },
+  {
+    "id": "Pedigree-FHIR-Implementation-Guide",
+    "type": "ImplementationGuide",
+    "url": "https://liberaliscomputing.github.io/pedigree-fhir-ig/ImplementationGuide/Pedigree-FHIR-Implementation-Guide",
+    "version": "0.1.0",
+    "name": "PedigreeFHIRImplementationGuide"
+  },
+  {
+    "id": "affected",
+    "type": "StructureDefinition",
+    "url": "https://liberaliscomputing.github.io/pedigree-fhir-ig/StructureDefinition/affected",
+    "version": "0.1.0",
+    "name": "Affected"
+  },
+  {
+    "id": "individual",
+    "type": "StructureDefinition",
+    "url": "https://liberaliscomputing.github.io/pedigree-fhir-ig/StructureDefinition/individual",
+    "version": "0.1.0",
+    "name": "Individual"
+  },
+  {
+    "id": "life-status",
+    "type": "StructureDefinition",
+    "url": "https://liberaliscomputing.github.io/pedigree-fhir-ig/StructureDefinition/life-status",
+    "version": "0.1.0",
+    "name": "LifeStatus"
+  },
+  {
+    "id": "pedigree",
+    "type": "StructureDefinition",
+    "url": "https://liberaliscomputing.github.io/pedigree-fhir-ig/StructureDefinition/pedigree",
+    "version": "0.1.0",
+    "name": "Pedigree"
+  },
+  {
+    "id": "relationship",
+    "type": "StructureDefinition",
+    "url": "https://liberaliscomputing.github.io/pedigree-fhir-ig/StructureDefinition/relationship",
+    "version": "0.1.0",
+    "name": "Relationship"
+  },
+  {
+    "id": "life-status",
+    "type": "ValueSet",
+    "url": "https://liberaliscomputing.github.io/pedigree-fhir-ig/ValueSet/life-status",
+    "version": "0.1.0",
+    "name": "LifeStatus"
+  },
+  {
+    "id": "relationship",
+    "type": "ValueSet",
+    "url": "https://liberaliscomputing.github.io/pedigree-fhir-ig/ValueSet/relationship",
+    "version": "0.1.0",
+    "name": "Relationship"
+  }
+]

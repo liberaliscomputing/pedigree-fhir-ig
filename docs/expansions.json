@@ -1,0 +1,237 @@
+{
+  "resourceType" : "Bundle",
+  "id" : "77a63985-5827-4e7a-a17c-a012e793b417",
+  "meta" : {
+    "lastUpdated" : "2021-03-24T18:22:36.980-04:00"
+  },
+  "type" : "collection",
+  "entry" : [{
+    "fullUrl" : "https://liberaliscomputing.github.io/pedigree-fhir-ig/ValueSet/life-status",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "life-status",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 3 concepts</p><div style=\"border: maroon 1px solid; background-color: #FFCCCC; padding: 8px\"><p>Warning: this expansion is generated from a fragment of the code system <a href=\"CodeSystem-life-status.html\">Life Status Code System</a> and may be missing codes, or include codes that are not valid</p></div><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-life-status.html\">Life Status Code System v0.1.0 (CodeSystem)</a></p><p>All codes from system <a href=\"CodeSystem-life-status.html\"><code>https://liberaliscomputing.github.io/pedigree-fhir-ig/CodeSystem/life-status</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---liberaliscomputing.github.io-pedigree-fhir-ig-CodeSystem-life-status-alive\"> </a>alive</td><td>alive</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---liberaliscomputing.github.io-pedigree-fhir-ig-CodeSystem-life-status-deceased\"> </a>deceased</td><td>deceased</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---liberaliscomputing.github.io-pedigree-fhir-ig-CodeSystem-life-status-unborn\"> </a>unborn</td><td>unborn</td><td/></tr></table></div>"
+      },
+      "url" : "https://liberaliscomputing.github.io/pedigree-fhir-ig/ValueSet/life-status",
+      "version" : "0.1.0",
+      "name" : "LifeStatus",
+      "title" : "Life Status Value Set",
+      "status" : "active",
+      "date" : "2021-03-24T18:22:36-04:00",
+      "contact" : [{
+        "name" : "Meen Chul Kim",
+        "telecom" : [{
+          "system" : "email",
+          "value" : "meenchul@d3b.center",
+          "use" : "work"
+        }]
+      }],
+      "expansion" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/expansion-codesystem-fragment",
+          "valueUri" : "https://liberaliscomputing.github.io/pedigree-fhir-ig/CodeSystem/life-status"
+        }],
+        "identifier" : "urn:uuid:fd708f88-ea2a-4186-962a-476e1e0b652a",
+        "timestamp" : "2021-03-24T18:22:49-04:00",
+        "total" : 3,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "https://liberaliscomputing.github.io/pedigree-fhir-ig/CodeSystem/life-status|0.1.0"
+        }],
+        "contains" : [{
+          "system" : "https://liberaliscomputing.github.io/pedigree-fhir-ig/CodeSystem/life-status",
+          "code" : "alive",
+          "display" : "alive"
+        },
+        {
+          "system" : "https://liberaliscomputing.github.io/pedigree-fhir-ig/CodeSystem/life-status",
+          "code" : "deceased",
+          "display" : "deceased"
+        },
+        {
+          "system" : "https://liberaliscomputing.github.io/pedigree-fhir-ig/CodeSystem/life-status",
+          "code" : "unborn",
+          "display" : "unborn"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://liberaliscomputing.github.io/pedigree-fhir-ig/ValueSet/relationship",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "relationship",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 26 concepts</p><div style=\"border: maroon 1px solid; background-color: #FFCCCC; padding: 8px\"><p>Warning: this expansion is generated from a fragment of the code system <a href=\"CodeSystem-relationship.html\">Relationship Code System</a> and may be missing codes, or include codes that are not valid</p></div><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-relationship.html\">Relationship Code System v0.1.0 (CodeSystem)</a></p><p>All codes from system <a href=\"CodeSystem-relationship.html\"><code>https://liberaliscomputing.github.io/pedigree-fhir-ig/CodeSystem/relationship</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---liberaliscomputing.github.io-pedigree-fhir-ig-CodeSystem-relationship-REL-001\"> </a>REL:001</td><td>relative</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---liberaliscomputing.github.io-pedigree-fhir-ig-CodeSystem-relationship-REL-002\"> </a>REL:002</td><td>biological relative</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---liberaliscomputing.github.io-pedigree-fhir-ig-CodeSystem-relationship-REL-003\"> </a>REL:003</td><td>biological parent</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---liberaliscomputing.github.io-pedigree-fhir-ig-CodeSystem-relationship-REL-004\"> </a>REL:004</td><td>sperm/ovum donor</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---liberaliscomputing.github.io-pedigree-fhir-ig-CodeSystem-relationship-REL-005\"> </a>REL:005</td><td>gestational carrier</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---liberaliscomputing.github.io-pedigree-fhir-ig-CodeSystem-relationship-REL-006\"> </a>REL:006</td><td>surrogate ovum donor</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---liberaliscomputing.github.io-pedigree-fhir-ig-CodeSystem-relationship-REL-007\"> </a>REL:007</td><td>biological sibling</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---liberaliscomputing.github.io-pedigree-fhir-ig-CodeSystem-relationship-REL-008\"> </a>REL:008</td><td>full sibling</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---liberaliscomputing.github.io-pedigree-fhir-ig-CodeSystem-relationship-REL-009\"> </a>REL:009</td><td>twin</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---liberaliscomputing.github.io-pedigree-fhir-ig-CodeSystem-relationship-REL-010\"> </a>REL:010</td><td>monozygotic twin</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---liberaliscomputing.github.io-pedigree-fhir-ig-CodeSystem-relationship-REL-011\"> </a>REL:011</td><td>polyzygotic twin</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---liberaliscomputing.github.io-pedigree-fhir-ig-CodeSystem-relationship-REL-012\"> </a>REL:012</td><td>half-sibling</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---liberaliscomputing.github.io-pedigree-fhir-ig-CodeSystem-relationship-REL-013\"> </a>REL:013</td><td>parental sibling</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---liberaliscomputing.github.io-pedigree-fhir-ig-CodeSystem-relationship-REL-014\"> </a>REL:014</td><td>cousin</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---liberaliscomputing.github.io-pedigree-fhir-ig-CodeSystem-relationship-REL-015\"> </a>REL:015</td><td>maternal cousin</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---liberaliscomputing.github.io-pedigree-fhir-ig-CodeSystem-relationship-REL-016\"> </a>REL:016</td><td>paternal cousin</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---liberaliscomputing.github.io-pedigree-fhir-ig-CodeSystem-relationship-REL-017\"> </a>REL:017</td><td>grandparent</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---liberaliscomputing.github.io-pedigree-fhir-ig-CodeSystem-relationship-REL-018\"> </a>REL:018</td><td>great-grandparent</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---liberaliscomputing.github.io-pedigree-fhir-ig-CodeSystem-relationship-REL-019\"> </a>REL:019</td><td>social/legal relative</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---liberaliscomputing.github.io-pedigree-fhir-ig-CodeSystem-relationship-REL-020\"> </a>REL:020</td><td>parent figure</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---liberaliscomputing.github.io-pedigree-fhir-ig-CodeSystem-relationship-REL-021\"> </a>REL:021</td><td>foster parent</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---liberaliscomputing.github.io-pedigree-fhir-ig-CodeSystem-relationship-REL-022\"> </a>REL:022</td><td>adoptive parent</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---liberaliscomputing.github.io-pedigree-fhir-ig-CodeSystem-relationship-REL-023\"> </a>REL:023</td><td>step-parent</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---liberaliscomputing.github.io-pedigree-fhir-ig-CodeSystem-relationship-REL-024\"> </a>REL:024</td><td>sibling figure</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---liberaliscomputing.github.io-pedigree-fhir-ig-CodeSystem-relationship-REL-025\"> </a>REL:025</td><td>step-sibling</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---liberaliscomputing.github.io-pedigree-fhir-ig-CodeSystem-relationship-REL-026\"> </a>REL:026</td><td>significant other</td><td/></tr></table></div>"
+      },
+      "url" : "https://liberaliscomputing.github.io/pedigree-fhir-ig/ValueSet/relationship",
+      "version" : "0.1.0",
+      "name" : "Relationship",
+      "title" : "Relationship Value Set",
+      "status" : "active",
+      "date" : "2021-03-24T18:22:36-04:00",
+      "contact" : [{
+        "name" : "Meen Chul Kim",
+        "telecom" : [{
+          "system" : "email",
+          "value" : "meenchul@d3b.center",
+          "use" : "work"
+        }]
+      }],
+      "expansion" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/expansion-codesystem-fragment",
+          "valueUri" : "https://liberaliscomputing.github.io/pedigree-fhir-ig/CodeSystem/relationship"
+        }],
+        "identifier" : "urn:uuid:9c09388d-723c-4984-8545-04ba56fd1d32",
+        "timestamp" : "2021-03-24T18:22:49-04:00",
+        "total" : 26,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "https://liberaliscomputing.github.io/pedigree-fhir-ig/CodeSystem/relationship|0.1.0"
+        }],
+        "contains" : [{
+          "system" : "https://liberaliscomputing.github.io/pedigree-fhir-ig/CodeSystem/relationship",
+          "code" : "REL:001",
+          "display" : "relative"
+        },
+        {
+          "system" : "https://liberaliscomputing.github.io/pedigree-fhir-ig/CodeSystem/relationship",
+          "code" : "REL:002",
+          "display" : "biological relative"
+        },
+        {
+          "system" : "https://liberaliscomputing.github.io/pedigree-fhir-ig/CodeSystem/relationship",
+          "code" : "REL:003",
+          "display" : "biological parent"
+        },
+        {
+          "system" : "https://liberaliscomputing.github.io/pedigree-fhir-ig/CodeSystem/relationship",
+          "code" : "REL:004",
+          "display" : "sperm/ovum donor"
+        },
+        {
+          "system" : "https://liberaliscomputing.github.io/pedigree-fhir-ig/CodeSystem/relationship",
+          "code" : "REL:005",
+          "display" : "gestational carrier"
+        },
+        {
+          "system" : "https://liberaliscomputing.github.io/pedigree-fhir-ig/CodeSystem/relationship",
+          "code" : "REL:006",
+          "display" : "surrogate ovum donor"
+        },
+        {
+          "system" : "https://liberaliscomputing.github.io/pedigree-fhir-ig/CodeSystem/relationship",
+          "code" : "REL:007",
+          "display" : "biological sibling"
+        },
+        {
+          "system" : "https://liberaliscomputing.github.io/pedigree-fhir-ig/CodeSystem/relationship",
+          "code" : "REL:008",
+          "display" : "full sibling"
+        },
+        {
+          "system" : "https://liberaliscomputing.github.io/pedigree-fhir-ig/CodeSystem/relationship",
+          "code" : "REL:009",
+          "display" : "twin"
+        },
+        {
+          "system" : "https://liberaliscomputing.github.io/pedigree-fhir-ig/CodeSystem/relationship",
+          "code" : "REL:010",
+          "display" : "monozygotic twin"
+        },
+        {
+          "system" : "https://liberaliscomputing.github.io/pedigree-fhir-ig/CodeSystem/relationship",
+          "code" : "REL:011",
+          "display" : "polyzygotic twin"
+        },
+        {
+          "system" : "https://liberaliscomputing.github.io/pedigree-fhir-ig/CodeSystem/relationship",
+          "code" : "REL:012",
+          "display" : "half-sibling"
+        },
+        {
+          "system" : "https://liberaliscomputing.github.io/pedigree-fhir-ig/CodeSystem/relationship",
+          "code" : "REL:013",
+          "display" : "parental sibling"
+        },
+        {
+          "system" : "https://liberaliscomputing.github.io/pedigree-fhir-ig/CodeSystem/relationship",
+          "code" : "REL:014",
+          "display" : "cousin"
+        },
+        {
+          "system" : "https://liberaliscomputing.github.io/pedigree-fhir-ig/CodeSystem/relationship",
+          "code" : "REL:015",
+          "display" : "maternal cousin"
+        },
+        {
+          "system" : "https://liberaliscomputing.github.io/pedigree-fhir-ig/CodeSystem/relationship",
+          "code" : "REL:016",
+          "display" : "paternal cousin"
+        },
+        {
+          "system" : "https://liberaliscomputing.github.io/pedigree-fhir-ig/CodeSystem/relationship",
+          "code" : "REL:017",
+          "display" : "grandparent"
+        },
+        {
+          "system" : "https://liberaliscomputing.github.io/pedigree-fhir-ig/CodeSystem/relationship",
+          "code" : "REL:018",
+          "display" : "great-grandparent"
+        },
+        {
+          "system" : "https://liberaliscomputing.github.io/pedigree-fhir-ig/CodeSystem/relationship",
+          "code" : "REL:019",
+          "display" : "social/legal relative"
+        },
+        {
+          "system" : "https://liberaliscomputing.github.io/pedigree-fhir-ig/CodeSystem/relationship",
+          "code" : "REL:020",
+          "display" : "parent figure"
+        },
+        {
+          "system" : "https://liberaliscomputing.github.io/pedigree-fhir-ig/CodeSystem/relationship",
+          "code" : "REL:021",
+          "display" : "foster parent"
+        },
+        {
+          "system" : "https://liberaliscomputing.github.io/pedigree-fhir-ig/CodeSystem/relationship",
+          "code" : "REL:022",
+          "display" : "adoptive parent"
+        },
+        {
+          "system" : "https://liberaliscomputing.github.io/pedigree-fhir-ig/CodeSystem/relationship",
+          "code" : "REL:023",
+          "display" : "step-parent"
+        },
+        {
+          "system" : "https://liberaliscomputing.github.io/pedigree-fhir-ig/CodeSystem/relationship",
+          "code" : "REL:024",
+          "display" : "sibling figure"
+        },
+        {
+          "system" : "https://liberaliscomputing.github.io/pedigree-fhir-ig/CodeSystem/relationship",
+          "code" : "REL:025",
+          "display" : "step-sibling"
+        },
+        {
+          "system" : "https://liberaliscomputing.github.io/pedigree-fhir-ig/CodeSystem/relationship",
+          "code" : "REL:026",
+          "display" : "significant other"
+        }]
+      }
+    }
+  }]
+}

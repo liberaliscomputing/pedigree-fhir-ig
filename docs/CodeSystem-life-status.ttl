@@ -1,0 +1,52 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://liberaliscomputing.github.io/pedigree-fhir-ig/CodeSystem/life-status> a fhir:CodeSystem;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "life-status"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system https://liberaliscomputing.github.io/pedigree-fhir-ig/CodeSystem/life-status defines many codes, of which the following are a subset:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">alive<a name=\"life-status-alive\"> </a></td><td>alive</td></tr><tr><td style=\"white-space:nowrap\">deceased<a name=\"life-status-deceased\"> </a></td><td>deceased</td></tr><tr><td style=\"white-space:nowrap\">unborn<a name=\"life-status-unborn\"> </a></td><td>unborn</td></tr></table></div>"
+  ];
+  fhir:CodeSystem.url [ fhir:value "https://liberaliscomputing.github.io/pedigree-fhir-ig/CodeSystem/life-status"];
+  fhir:CodeSystem.version [ fhir:value "0.1.0"];
+  fhir:CodeSystem.name [ fhir:value "LifeStatus"];
+  fhir:CodeSystem.title [ fhir:value "Life Status Code System"];
+  fhir:CodeSystem.status [ fhir:value "draft"];
+  fhir:CodeSystem.date [ fhir:value "2021-03-24T18:22:36-04:00"^^xsd:dateTime];
+  fhir:CodeSystem.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "Meen Chul Kim" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "meenchul@d3b.center" ];
+       fhir:ContactPoint.use [ fhir:value "work" ]
+     ]
+  ];
+  fhir:CodeSystem.content [ fhir:value "fragment"];
+  fhir:CodeSystem.concept [
+     fhir:index 0;
+     fhir:CodeSystem.concept.code [ fhir:value "alive" ];
+     fhir:CodeSystem.concept.display [ fhir:value "alive" ]
+  ], [
+     fhir:index 1;
+     fhir:CodeSystem.concept.code [ fhir:value "deceased" ];
+     fhir:CodeSystem.concept.display [ fhir:value "deceased" ]
+  ], [
+     fhir:index 2;
+     fhir:CodeSystem.concept.code [ fhir:value "unborn" ];
+     fhir:CodeSystem.concept.display [ fhir:value "unborn" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://liberaliscomputing.github.io/pedigree-fhir-ig/CodeSystem/life-status.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

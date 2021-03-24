@@ -1,0 +1,184 @@
+{
+  "resourceType": "Composition",
+  "id": "pedigree-example-1",
+  "meta": {
+    "profile": [
+      "https://liberaliscomputing.github.io/pedigree-fhir-ig/StructureDefinition/pedigree"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 1</p><p><b>status</b>: final</p><p><b>type</b>: <span title=\"Codes: {http://snomed.info/sct 422432008}\">Family history section</span></p><p><b>date</b>: 2021-06-15</p><p><b>author</b>: <a href=\"Organization-organization-example-1.html\">Generated Summary: active; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/organization-type prov}\">Hospital</span>; name: Amazing Children's Hospital</a></p><p><b>title</b>: Pedigree 1</p></div>"
+  },
+  "identifier": {
+    "system": "urn:pedigree-fhir-ig:unique-string/pedigree",
+    "value": "1"
+  },
+  "status": "final",
+  "type": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "422432008",
+        "display": "Family history section"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/individual-example-1"
+  },
+  "date": "2021-06-15",
+  "author": [
+    {
+      "reference": "Organization/organization-example-1"
+    }
+  ],
+  "title": "Pedigree 1",
+  "section": [
+    {
+      "title": "Proband",
+      "code": {
+        "coding": [
+          {
+            "system": "https://liberaliscomputing.github.io/pedigree-fhir-ig/CodeSystem/pedigree-sectioning",
+            "code": "proband"
+          }
+        ]
+      },
+      "entry": [
+        {
+          "reference": "Patient/individual-example-1"
+        }
+      ]
+    },
+    {
+      "title": "Individual",
+      "code": {
+        "coding": [
+          {
+            "system": "https://liberaliscomputing.github.io/pedigree-fhir-ig/CodeSystem/pedigree-sectioning",
+            "code": "individual"
+          }
+        ]
+      },
+      "entry": [
+        {
+          "reference": "Patient/individual-example-1"
+        },
+        {
+          "reference": "Patient/individual-example-2"
+        },
+        {
+          "reference": "Patient/individual-example-3"
+        },
+        {
+          "reference": "Patient/individual-example-4"
+        },
+        {
+          "reference": "Patient/individual-example-5"
+        },
+        {
+          "reference": "Patient/individual-example-6"
+        },
+        {
+          "reference": "Patient/individual-example-7"
+        },
+        {
+          "reference": "Patient/individual-example-8"
+        },
+        {
+          "reference": "Patient/individual-example-9"
+        },
+        {
+          "reference": "Patient/individual-example-10"
+        },
+        {
+          "reference": "Patient/individual-example-11"
+        },
+        {
+          "reference": "Patient/individual-example-12"
+        },
+        {
+          "reference": "Patient/individual-example-13"
+        }
+      ]
+    },
+    {
+      "title": "Relationship",
+      "code": {
+        "coding": [
+          {
+            "system": "https://liberaliscomputing.github.io/pedigree-fhir-ig/CodeSystem/pedigree-sectioning",
+            "code": "relationship"
+          }
+        ]
+      },
+      "entry": [
+        {
+          "reference": "Observation/relationship-example-1"
+        },
+        {
+          "reference": "Observation/relationship-example-2"
+        },
+        {
+          "reference": "Observation/relationship-example-3"
+        },
+        {
+          "reference": "Observation/relationship-example-4"
+        },
+        {
+          "reference": "Observation/relationship-example-5"
+        },
+        {
+          "reference": "Observation/relationship-example-6"
+        },
+        {
+          "reference": "Observation/relationship-example-7"
+        },
+        {
+          "reference": "Observation/relationship-example-8"
+        },
+        {
+          "reference": "Observation/relationship-example-9"
+        },
+        {
+          "reference": "Observation/relationship-example-10"
+        },
+        {
+          "reference": "Observation/relationship-example-11"
+        },
+        {
+          "reference": "Observation/relationship-example-12"
+        },
+        {
+          "reference": "Observation/relationship-example-13"
+        },
+        {
+          "reference": "Observation/relationship-example-14"
+        },
+        {
+          "reference": "Observation/relationship-example-15"
+        },
+        {
+          "reference": "Observation/relationship-example-16"
+        }
+      ]
+    },
+    {
+      "title": "Reason Collected",
+      "code": {
+        "coding": [
+          {
+            "system": "https://liberaliscomputing.github.io/pedigree-fhir-ig/CodeSystem/pedigree-sectioning",
+            "code": "reason-collected"
+          }
+        ]
+      },
+      "entry": [
+        {
+          "reference": "Condition/condition-example-1"
+        }
+      ]
+    }
+  ]
+}

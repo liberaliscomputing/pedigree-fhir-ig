@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="pedigree-sectioning"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system https://liberaliscomputing.github.io/pedigree-fhir-ig/CodeSystem/pedigree-sectioning defines many codes, of which the following are a subset:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">proband<a name="pedigree-sectioning-proband"> </a></td><td>proband</td></tr><tr><td style="white-space:nowrap">individual<a name="pedigree-sectioning-individual"> </a></td><td>individual</td></tr><tr><td style="white-space:nowrap">relationship<a name="pedigree-sectioning-relationship"> </a></td><td>relationship</td></tr><tr><td style="white-space:nowrap">reason-collected<a name="pedigree-sectioning-reason-collected"> </a></td><td>reason collected</td></tr></table></div>
+  </text>
+  <url value="https://liberaliscomputing.github.io/pedigree-fhir-ig/CodeSystem/pedigree-sectioning"/>
+  <version value="0.1.0"/>
+  <name value="PedigreeSectioning"/>
+  <title value="Pedigree Sectioning Code System"/>
+  <status value="draft"/>
+  <date value="2021-03-24T18:22:36-04:00"/>
+  <contact>
+    <name value="Meen Chul Kim"/>
+    <telecom>
+      <system value="email"/>
+      <value value="meenchul@d3b.center"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <content value="fragment"/>
+  <concept>
+    <code value="proband"/>
+    <display value="proband"/>
+  </concept>
+  <concept>
+    <code value="individual"/>
+    <display value="individual"/>
+  </concept>
+  <concept>
+    <code value="relationship"/>
+    <display value="relationship"/>
+  </concept>
+  <concept>
+    <code value="reason-collected"/>
+    <display value="reason collected"/>
+  </concept>
+</CodeSystem>

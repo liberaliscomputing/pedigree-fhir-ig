@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="life-status"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system https://liberaliscomputing.github.io/pedigree-fhir-ig/CodeSystem/life-status defines many codes, of which the following are a subset:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">alive<a name="life-status-alive"> </a></td><td>alive</td></tr><tr><td style="white-space:nowrap">deceased<a name="life-status-deceased"> </a></td><td>deceased</td></tr><tr><td style="white-space:nowrap">unborn<a name="life-status-unborn"> </a></td><td>unborn</td></tr></table></div>
+  </text>
+  <url value="https://liberaliscomputing.github.io/pedigree-fhir-ig/CodeSystem/life-status"/>
+  <version value="0.1.0"/>
+  <name value="LifeStatus"/>
+  <title value="Life Status Code System"/>
+  <status value="draft"/>
+  <date value="2021-03-24T18:22:36-04:00"/>
+  <contact>
+    <name value="Meen Chul Kim"/>
+    <telecom>
+      <system value="email"/>
+      <value value="meenchul@d3b.center"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <content value="fragment"/>
+  <concept>
+    <code value="alive"/>
+    <display value="alive"/>
+  </concept>
+  <concept>
+    <code value="deceased"/>
+    <display value="deceased"/>
+  </concept>
+  <concept>
+    <code value="unborn"/>
+    <display value="unborn"/>
+  </concept>
+</CodeSystem>

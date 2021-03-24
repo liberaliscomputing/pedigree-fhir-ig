@@ -1,0 +1,30 @@
+# ╭──────────────────────────────────────ImplementationGuide───────────────────────────────────────╮
+# │  The properties below are used to create the ImplementationGuide resource. For a list of       │
+# │  supported properties, see: https://fshschool.org/sushi/configuration/                         │
+# ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
+id: Pedigree-FHIR-Implementation-Guide
+canonical: https://liberaliscomputing.github.io/pedigree-fhir-ig
+name: PedigreeFHIRImplementationGuide
+title: Pedigree FHIR Implementation Guide
+status: draft
+license: CC0-1.0
+version: 0.1.0
+fhirVersion: 4.0.1
+copyrightYear: 2021+
+releaseLabel: ci-build
+contact:
+  - name: Meen Chul Kim
+    telecom:
+      - system: email
+        value: meenchul@d3b.center
+        use: work
+dependencies:
+  hl7.fhir.us.core: 3.1.1
+
+# ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
+# │  To use a provided input/includes/menu.xml file, delete the "menu" property below.             │
+# ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
+menu:
+  IG Home: index.html
+  Table of Contents: toc.html
+  Artifacts: artifacts.html

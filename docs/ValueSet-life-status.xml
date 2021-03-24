@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="life-status"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include all codes defined in <a href="CodeSystem-life-status.html"><code>https://liberaliscomputing.github.io/pedigree-fhir-ig/CodeSystem/life-status</code></a></li></ul></div>
+  </text>
+  <url value="https://liberaliscomputing.github.io/pedigree-fhir-ig/ValueSet/life-status"/>
+  <version value="0.1.0"/>
+  <name value="LifeStatus"/>
+  <title value="Life Status Value Set"/>
+  <status value="active"/>
+  <date value="2021-03-24T18:22:36-04:00"/>
+  <contact>
+    <name value="Meen Chul Kim"/>
+    <telecom>
+      <system value="email"/>
+      <value value="meenchul@d3b.center"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <compose>
+    <include>
+      <system value="https://liberaliscomputing.github.io/pedigree-fhir-ig/CodeSystem/life-status"/>
+    </include>
+  </compose>
+</ValueSet>

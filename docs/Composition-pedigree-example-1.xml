@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Composition xmlns="http://hl7.org/fhir">
+  <id value="pedigree-example-1"/>
+  <meta>
+    <profile value="https://liberaliscomputing.github.io/pedigree-fhir-ig/StructureDefinition/pedigree"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 1</p><p><b>status</b>: final</p><p><b>type</b>: <span title="Codes: {http://snomed.info/sct 422432008}">Family history section</span></p><p><b>date</b>: 2021-06-15</p><p><b>author</b>: <a href="Organization-organization-example-1.html">Generated Summary: active; <span title="Codes: {http://terminology.hl7.org/CodeSystem/organization-type prov}">Hospital</span>; name: Amazing Children's Hospital</a></p><p><b>title</b>: Pedigree 1</p></div>
+  </text>
+  <identifier>
+    <system value="urn:pedigree-fhir-ig:unique-string/pedigree"/>
+    <value value="1"/>
+  </identifier>
+  <status value="final"/>
+  <type>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="422432008"/>
+      <display value="Family history section"/>
+    </coding>
+  </type>
+  <subject>
+    <reference value="Patient/individual-example-1"/>
+  </subject>
+  <date value="2021-06-15"/>
+  <author>
+    <reference value="Organization/organization-example-1"/>
+  </author>
+  <title value="Pedigree 1"/>
+  <section>
+    <title value="Proband"/>
+    <code>
+      <coding>
+        <system value="https://liberaliscomputing.github.io/pedigree-fhir-ig/CodeSystem/pedigree-sectioning"/>
+        <code value="proband"/>
+      </coding>
+    </code>
+    <entry>
+      <reference value="Patient/individual-example-1"/>
+    </entry>
+  </section>
+  <section>
+    <title value="Individual"/>
+    <code>
+      <coding>
+        <system value="https://liberaliscomputing.github.io/pedigree-fhir-ig/CodeSystem/pedigree-sectioning"/>
+        <code value="individual"/>
+      </coding>
+    </code>
+    <entry>
+      <reference value="Patient/individual-example-1"/>
+    </entry>
+    <entry>
+      <reference value="Patient/individual-example-2"/>
+    </entry>
+    <entry>
+      <reference value="Patient/individual-example-3"/>
+    </entry>
+    <entry>
+      <reference value="Patient/individual-example-4"/>
+    </entry>
+    <entry>
+      <reference value="Patient/individual-example-5"/>
+    </entry>
+    <entry>
+      <reference value="Patient/individual-example-6"/>
+    </entry>
+    <entry>
+      <reference value="Patient/individual-example-7"/>
+    </entry>
+    <entry>
+      <reference value="Patient/individual-example-8"/>
+    </entry>
+    <entry>
+      <reference value="Patient/individual-example-9"/>
+    </entry>
+    <entry>
+      <reference value="Patient/individual-example-10"/>
+    </entry>
+    <entry>
+      <reference value="Patient/individual-example-11"/>
+    </entry>
+    <entry>
+      <reference value="Patient/individual-example-12"/>
+    </entry>
+    <entry>
+      <reference value="Patient/individual-example-13"/>
+    </entry>
+  </section>
+  <section>
+    <title value="Relationship"/>
+    <code>
+      <coding>
+        <system value="https://liberaliscomputing.github.io/pedigree-fhir-ig/CodeSystem/pedigree-sectioning"/>
+        <code value="relationship"/>
+      </coding>
+    </code>
+    <entry>
+      <reference value="Observation/relationship-example-1"/>
+    </entry>
+    <entry>
+      <reference value="Observation/relationship-example-2"/>
+    </entry>
+    <entry>
+      <reference value="Observation/relationship-example-3"/>
+    </entry>
+    <entry>
+      <reference value="Observation/relationship-example-4"/>
+    </entry>
+    <entry>
+      <reference value="Observation/relationship-example-5"/>
+    </entry>
+    <entry>
+      <reference value="Observation/relationship-example-6"/>
+    </entry>
+    <entry>
+      <reference value="Observation/relationship-example-7"/>
+    </entry>
+    <entry>
+      <reference value="Observation/relationship-example-8"/>
+    </entry>
+    <entry>
+      <reference value="Observation/relationship-example-9"/>
+    </entry>
+    <entry>
+      <reference value="Observation/relationship-example-10"/>
+    </entry>
+    <entry>
+      <reference value="Observation/relationship-example-11"/>
+    </entry>
+    <entry>
+      <reference value="Observation/relationship-example-12"/>
+    </entry>
+    <entry>
+      <reference value="Observation/relationship-example-13"/>
+    </entry>
+    <entry>
+      <reference value="Observation/relationship-example-14"/>
+    </entry>
+    <entry>
+      <reference value="Observation/relationship-example-15"/>
+    </entry>
+    <entry>
+      <reference value="Observation/relationship-example-16"/>
+    </entry>
+  </section>
+  <section>
+    <title value="Reason Collected"/>
+    <code>
+      <coding>
+        <system value="https://liberaliscomputing.github.io/pedigree-fhir-ig/CodeSystem/pedigree-sectioning"/>
+        <code value="reason-collected"/>
+      </coding>
+    </code>
+    <entry>
+      <reference value="Condition/condition-example-1"/>
+    </entry>
+  </section>
+</Composition>

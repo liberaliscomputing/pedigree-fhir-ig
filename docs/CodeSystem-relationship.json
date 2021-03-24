@@ -1,0 +1,133 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "relationship",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system https://liberaliscomputing.github.io/pedigree-fhir-ig/CodeSystem/relationship defines many codes, of which the following are a subset:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">REL:001<a name=\"relationship-REL.58001\"> </a></td><td>relative</td></tr><tr><td style=\"white-space:nowrap\">REL:002<a name=\"relationship-REL.58002\"> </a></td><td>biological relative</td></tr><tr><td style=\"white-space:nowrap\">REL:003<a name=\"relationship-REL.58003\"> </a></td><td>biological parent</td></tr><tr><td style=\"white-space:nowrap\">REL:004<a name=\"relationship-REL.58004\"> </a></td><td>sperm/ovum donor</td></tr><tr><td style=\"white-space:nowrap\">REL:005<a name=\"relationship-REL.58005\"> </a></td><td>gestational carrier</td></tr><tr><td style=\"white-space:nowrap\">REL:006<a name=\"relationship-REL.58006\"> </a></td><td>surrogate ovum donor</td></tr><tr><td style=\"white-space:nowrap\">REL:007<a name=\"relationship-REL.58007\"> </a></td><td>biological sibling</td></tr><tr><td style=\"white-space:nowrap\">REL:008<a name=\"relationship-REL.58008\"> </a></td><td>full sibling</td></tr><tr><td style=\"white-space:nowrap\">REL:009<a name=\"relationship-REL.58009\"> </a></td><td>twin</td></tr><tr><td style=\"white-space:nowrap\">REL:010<a name=\"relationship-REL.58010\"> </a></td><td>monozygotic twin</td></tr><tr><td style=\"white-space:nowrap\">REL:011<a name=\"relationship-REL.58011\"> </a></td><td>polyzygotic twin</td></tr><tr><td style=\"white-space:nowrap\">REL:012<a name=\"relationship-REL.58012\"> </a></td><td>half-sibling</td></tr><tr><td style=\"white-space:nowrap\">REL:013<a name=\"relationship-REL.58013\"> </a></td><td>parental sibling</td></tr><tr><td style=\"white-space:nowrap\">REL:014<a name=\"relationship-REL.58014\"> </a></td><td>cousin</td></tr><tr><td style=\"white-space:nowrap\">REL:015<a name=\"relationship-REL.58015\"> </a></td><td>maternal cousin</td></tr><tr><td style=\"white-space:nowrap\">REL:016<a name=\"relationship-REL.58016\"> </a></td><td>paternal cousin</td></tr><tr><td style=\"white-space:nowrap\">REL:017<a name=\"relationship-REL.58017\"> </a></td><td>grandparent</td></tr><tr><td style=\"white-space:nowrap\">REL:018<a name=\"relationship-REL.58018\"> </a></td><td>great-grandparent</td></tr><tr><td style=\"white-space:nowrap\">REL:019<a name=\"relationship-REL.58019\"> </a></td><td>social/legal relative</td></tr><tr><td style=\"white-space:nowrap\">REL:020<a name=\"relationship-REL.58020\"> </a></td><td>parent figure</td></tr><tr><td style=\"white-space:nowrap\">REL:021<a name=\"relationship-REL.58021\"> </a></td><td>foster parent</td></tr><tr><td style=\"white-space:nowrap\">REL:022<a name=\"relationship-REL.58022\"> </a></td><td>adoptive parent</td></tr><tr><td style=\"white-space:nowrap\">REL:023<a name=\"relationship-REL.58023\"> </a></td><td>step-parent</td></tr><tr><td style=\"white-space:nowrap\">REL:024<a name=\"relationship-REL.58024\"> </a></td><td>sibling figure</td></tr><tr><td style=\"white-space:nowrap\">REL:025<a name=\"relationship-REL.58025\"> </a></td><td>step-sibling</td></tr><tr><td style=\"white-space:nowrap\">REL:026<a name=\"relationship-REL.58026\"> </a></td><td>significant other</td></tr></table></div>"
+  },
+  "url": "https://liberaliscomputing.github.io/pedigree-fhir-ig/CodeSystem/relationship",
+  "version": "0.1.0",
+  "name": "Relationship",
+  "title": "Relationship Code System",
+  "status": "draft",
+  "date": "2021-03-24T18:22:36-04:00",
+  "contact": [
+    {
+      "name": "Meen Chul Kim",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "meenchul@d3b.center",
+          "use": "work"
+        }
+      ]
+    }
+  ],
+  "content": "fragment",
+  "concept": [
+    {
+      "code": "REL:001",
+      "display": "relative"
+    },
+    {
+      "code": "REL:002",
+      "display": "biological relative"
+    },
+    {
+      "code": "REL:003",
+      "display": "biological parent"
+    },
+    {
+      "code": "REL:004",
+      "display": "sperm/ovum donor"
+    },
+    {
+      "code": "REL:005",
+      "display": "gestational carrier"
+    },
+    {
+      "code": "REL:006",
+      "display": "surrogate ovum donor"
+    },
+    {
+      "code": "REL:007",
+      "display": "biological sibling"
+    },
+    {
+      "code": "REL:008",
+      "display": "full sibling"
+    },
+    {
+      "code": "REL:009",
+      "display": "twin"
+    },
+    {
+      "code": "REL:010",
+      "display": "monozygotic twin"
+    },
+    {
+      "code": "REL:011",
+      "display": "polyzygotic twin"
+    },
+    {
+      "code": "REL:012",
+      "display": "half-sibling"
+    },
+    {
+      "code": "REL:013",
+      "display": "parental sibling"
+    },
+    {
+      "code": "REL:014",
+      "display": "cousin"
+    },
+    {
+      "code": "REL:015",
+      "display": "maternal cousin"
+    },
+    {
+      "code": "REL:016",
+      "display": "paternal cousin"
+    },
+    {
+      "code": "REL:017",
+      "display": "grandparent"
+    },
+    {
+      "code": "REL:018",
+      "display": "great-grandparent"
+    },
+    {
+      "code": "REL:019",
+      "display": "social/legal relative"
+    },
+    {
+      "code": "REL:020",
+      "display": "parent figure"
+    },
+    {
+      "code": "REL:021",
+      "display": "foster parent"
+    },
+    {
+      "code": "REL:022",
+      "display": "adoptive parent"
+    },
+    {
+      "code": "REL:023",
+      "display": "step-parent"
+    },
+    {
+      "code": "REL:024",
+      "display": "sibling figure"
+    },
+    {
+      "code": "REL:025",
+      "display": "step-sibling"
+    },
+    {
+      "code": "REL:026",
+      "display": "significant other"
+    }
+  ]
+}

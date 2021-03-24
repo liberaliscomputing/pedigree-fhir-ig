@@ -1,0 +1,45 @@
+{
+  "resourceType": "Observation",
+  "id": "relationship-example-9",
+  "meta": {
+    "profile": [
+      "https://liberaliscomputing.github.io/pedigree-fhir-ig/StructureDefinition/relationship"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 9</p><p></p><p><b>code</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-RoleCode FAMMEMB}\">family member</span></p><p><b>subject</b>: <a href=\"Patient-individual-example-9.html\">Generated Summary: id: 9; gender: female</a></p><p><b>focus</b>: <a href=\"Patient-individual-example-4.html\">Generated Summary: id: 4; gender: female</a></p><p><b>value</b>: <span title=\"Codes: \">biological parent</span></p></div>"
+  },
+  "identifier": [
+    {
+      "system": "urn:pedigree-fhir-ig:unique-string/relationship",
+      "value": "9"
+    }
+  ],
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+        "code": "FAMMEMB",
+        "display": "family member"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/individual-example-9"
+  },
+  "focus": [
+    {
+      "reference": "Patient/individual-example-4"
+    }
+  ],
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "code": "REL:003",
+        "display": "biological parent"
+      }
+    ]
+  }
+}

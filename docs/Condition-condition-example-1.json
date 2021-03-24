@@ -1,0 +1,57 @@
+{
+  "resourceType": "Condition",
+  "id": "condition-example-1",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 1</p><p><b>clinicalStatus</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/condition-clinical recurrence}\">Recurrence</span></p><p><b>verificationStatus</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/condition-ver-status confirmed}\">Confirmed</span></p><p><b>code</b>: <span title=\"Codes: {http://purl.obolibrary.org/obo/hp.owl HP:0003002}\">Recurrent breast cancer</span></p><p><b>bodySite</b>: <span title=\"Codes: {http://purl.obolibrary.org/obo/uberon.owl UBERON:0000310}\">Breast</span></p><p><b>subject</b>: <a href=\"Patient-individual-example-1.html\">Generated Summary: id: 1; gender: female; birthDate: 2019-06-15</a></p></div>"
+  },
+  "identifier": [
+    {
+      "system": "urn:pedigree-fhir-ig:unique-string/condition",
+      "value": "1"
+    }
+  ],
+  "clinicalStatus": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+        "code": "recurrence",
+        "display": "Recurrence"
+      }
+    ]
+  },
+  "verificationStatus": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+        "code": "confirmed",
+        "display": "Confirmed"
+      }
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "system": "http://purl.obolibrary.org/obo/hp.owl",
+        "code": "HP:0003002",
+        "display": "Breast carcinoma"
+      }
+    ],
+    "text": "Recurrent breast cancer"
+  },
+  "bodySite": [
+    {
+      "coding": [
+        {
+          "system": "http://purl.obolibrary.org/obo/uberon.owl",
+          "code": "UBERON:0000310",
+          "display": "breast"
+        }
+      ],
+      "text": "Breast"
+    }
+  ],
+  "subject": {
+    "reference": "Patient/individual-example-1"
+  }
+}

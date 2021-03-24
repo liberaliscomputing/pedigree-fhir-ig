@@ -1,0 +1,53 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://liberaliscomputing.github.io/pedigree-fhir-ig/Patient/individual-example-9> a fhir:Patient;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "individual-example-9"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://liberaliscomputing.github.io/pedigree-fhir-ig/StructureDefinition/individual";
+       fhir:index 0;
+       fhir:link <https://liberaliscomputing.github.io/pedigree-fhir-ig/StructureDefinition/individual>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>Affected</b>: true</p><p><b>genderIdentity</b>: <span title=\"Codes: \">female</span></p><p><b>Life Status</b>: alive</p><p><b>identifier</b>: id: 9</p><p><b>gender</b>: female</p></div>"
+  ];
+  fhir:DomainResource.extension [
+     fhir:index 0;
+     fhir:Extension.url [ fhir:value "https://liberaliscomputing.github.io/pedigree-fhir-ig/StructureDefinition/affected" ];
+     fhir:Extension.valueBoolean [ fhir:value "true"^^xsd:boolean ]
+  ], [
+     fhir:index 1;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/patient-genderIdentity" ];
+     fhir:Extension.valueCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.code [ fhir:value "female" ]
+       ]
+     ]
+  ], [
+     fhir:index 2;
+     fhir:Extension.url [ fhir:value "https://liberaliscomputing.github.io/pedigree-fhir-ig/StructureDefinition/life-status" ];
+     fhir:Extension.valueCode [ fhir:value "alive" ]
+  ];
+  fhir:Patient.identifier [
+     fhir:index 0;
+     fhir:Identifier.system [ fhir:value "urn:pedigree-fhir-ig:unique-string/individual" ];
+     fhir:Identifier.value [ fhir:value "9" ]
+  ];
+  fhir:Patient.gender [ fhir:value "female"] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://liberaliscomputing.github.io/pedigree-fhir-ig/Patient/individual-example-9.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

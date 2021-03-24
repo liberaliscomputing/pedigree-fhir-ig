@@ -1,0 +1,1455 @@
+﻿<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- broken links = 226, errors = 0, warn = 69, info = 2 -->
+<head>
+  <title>PedigreeFHIRImplementationGuide : Validation Results</title>
+  <link href="fhir.css" rel="stylesheet"/>
+  <style>
+    span.flip  { background-color: #4CAF50; color: white; border: solid 1px #a6d8a8; padding: 2px }
+  </style>
+  <script>
+    function flip(id) {
+      var span = document.getElementById('s'+id);
+      var div = document.getElementById(id);
+      if (document.getElementById('s'+id).innerHTML == 'Show Reasoning') {
+        div.style.display = 'block';
+        span.innerHTML = 'Hide Reasoning';
+      } else {
+        div.style.display = 'none';
+        span.innerHTML = 'Show Reasoning';
+      }
+    }
+  </script>
+</head>
+<body style="margin: 20px; background-color: #ffffff">
+ <h1>Validation Results for PedigreeFHIRImplementationGuide</h1>
+ <p>Generated Wed Mar 24 18:23:03 EDT 2021, FHIR version 4.0.1 for Pedigree-FHIR-Implementation-Guide#0.1.0 (canonical = <a href="https://liberaliscomputing.github.io/pedigree-fhir-ig">https://liberaliscomputing.github.io/pedigree-fhir-ig</a> (<a href="https://liberaliscomputing.github.io/pedigree-fhir-ig/history.html">history</a>)). See <a href="/users/kimm11/documents/workspace/liberaliscomputing/pedigree-fhir-ig/output/qa.html">Full QA Report</a></p>
+<table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
+ <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.1.64</span></td></tr>
+ <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = Pedigree-FHIR-Implementation-Guide, Canonical = https://liberaliscomputing.github.io/pedigree-fhir-ig</td></tr>
+ <tr><td>Realm Check for n/a:</td><td><span style="color: maroon; font-weight: bold"></span><ul><li>n/a</li></ul></td></tr>
+ <tr><td>Version Check:</td><td>0.1.0: <span stlye="color: marron; font-weight: bold">no package-list.json - the guide is not ready for publishing</span></td></tr>
+ <tr><td>Supressed Messages:</td><td>No Suppressed Issues
+</td></tr>
+ <tr><td>Dependency Checks:</td><td><div><table border="0" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The NPM Package Id">Package</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The version of the package">Version</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The version of FHIR that the package is based on">FHIR Release</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Canonical URL">Canonical</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Web Reference Base">Web Base</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Comments about this entry">Comment</span></th></tr><tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/Users/kimm11/Documents/workspace/liberaliscomputing/pedigree-fhir-ig/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4Xu3IoREAIAwEwfT6/ddA0GBAxO3NrLlKUj9263wAAAAvrgEAADClAVWFQIBRHMicAAAAAElFTkSuQmCC)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: white; background-color: inherit" title="NPM Package" class="hierarchy"/> Pedigree-FHIR-Implementation-Guide</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0.1.0</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">4.0.1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">https://liberaliscomputing.github.io/pedigree-fhir-ig</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/Users/kimm11/Documents/workspace/liberaliscomputing/pedigree-fhir-ig/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAJUlEQVR4Xu3IIQEAAAgDsHd9/w4EQIOamFnaBgAA4MMKAACAKwNp30CqZFfFmwAAAABJRU5ErkJggg==)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzME+lXFigAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+3OsRUAIAjEUOL+O8cJABttJM11/x1qZAGqRBEVcNIqdWj1efDqQbb3HwwwwEfABmQUHSPM9dtDAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: #F7F7F7; background-color: inherit" title="NPM Package" class="hierarchy"/> hl7.fhir.us.core</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">3.1.1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">4.0.1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.org/fhir/us/core</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.org/fhir/us/core/STU3.1.1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+</table><para>Templates: fhir.base.template#current</para></div></td></tr>
+ <tr><td>HL7 Publication Rules:</td><td>Code = n/a. n/a - not an HL7.org or FHIR.org implementation guide
+</td></tr>
+ <tr><td>HTA Analysis:</td><td><i>Non-HL7 Igs are exempt from terminology dependency analysis</i></td></tr>
+ <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at https://liberaliscomputing.github.io/pedigree-fhir-ig (Problem #1 with package-list.json at https://liberaliscomputing.github.io/pedigree-fhir-ig: https://liberaliscomputing.github.io/pedigree-fhir-ig/package-list.json)</td></tr>
+ <tr><td>Summary:</td><td> broken links = 226, errors = 0, warn = 69, info = 2</td></tr>
+</table>
+ <table class="grid">
+   <tr>
+     <td><b>Filename</b></td><td><b>Errors</b></td><td><b>Warnings</b></td><td><b>Hints</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>226</b></td><td><b>40</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_kimm11_Documents_workspace_liberaliscomputing_pedigree-fhir-ig_fsh-generated_resources_observation-relationship-example-1"><b>/Users/kimm11/Documents/workspace/liberaliscomputing/pedigree-fhir-ig/fsh-generated/resources/observation-relationship-example-1</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_kimm11_Documents_workspace_liberaliscomputing_pedigree-fhir-ig_fsh-generated_resources_observation-relationship-example-10"><b>/Users/kimm11/Documents/workspace/liberaliscomputing/pedigree-fhir-ig/fsh-generated/resources/observation-relationship-example-10</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_kimm11_Documents_workspace_liberaliscomputing_pedigree-fhir-ig_fsh-generated_resources_observation-relationship-example-11"><b>/Users/kimm11/Documents/workspace/liberaliscomputing/pedigree-fhir-ig/fsh-generated/resources/observation-relationship-example-11</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_kimm11_Documents_workspace_liberaliscomputing_pedigree-fhir-ig_fsh-generated_resources_observation-relationship-example-12"><b>/Users/kimm11/Documents/workspace/liberaliscomputing/pedigree-fhir-ig/fsh-generated/resources/observation-relationship-example-12</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_kimm11_Documents_workspace_liberaliscomputing_pedigree-fhir-ig_fsh-generated_resources_observation-relationship-example-13"><b>/Users/kimm11/Documents/workspace/liberaliscomputing/pedigree-fhir-ig/fsh-generated/resources/observation-relationship-example-13</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_kimm11_Documents_workspace_liberaliscomputing_pedigree-fhir-ig_fsh-generated_resources_observation-relationship-example-14"><b>/Users/kimm11/Documents/workspace/liberaliscomputing/pedigree-fhir-ig/fsh-generated/resources/observation-relationship-example-14</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_kimm11_Documents_workspace_liberaliscomputing_pedigree-fhir-ig_fsh-generated_resources_observation-relationship-example-15"><b>/Users/kimm11/Documents/workspace/liberaliscomputing/pedigree-fhir-ig/fsh-generated/resources/observation-relationship-example-15</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_kimm11_Documents_workspace_liberaliscomputing_pedigree-fhir-ig_fsh-generated_resources_observation-relationship-example-16"><b>/Users/kimm11/Documents/workspace/liberaliscomputing/pedigree-fhir-ig/fsh-generated/resources/observation-relationship-example-16</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_kimm11_Documents_workspace_liberaliscomputing_pedigree-fhir-ig_fsh-generated_resources_observation-relationship-example-2"><b>/Users/kimm11/Documents/workspace/liberaliscomputing/pedigree-fhir-ig/fsh-generated/resources/observation-relationship-example-2</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_kimm11_Documents_workspace_liberaliscomputing_pedigree-fhir-ig_fsh-generated_resources_observation-relationship-example-3"><b>/Users/kimm11/Documents/workspace/liberaliscomputing/pedigree-fhir-ig/fsh-generated/resources/observation-relationship-example-3</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_kimm11_Documents_workspace_liberaliscomputing_pedigree-fhir-ig_fsh-generated_resources_observation-relationship-example-4"><b>/Users/kimm11/Documents/workspace/liberaliscomputing/pedigree-fhir-ig/fsh-generated/resources/observation-relationship-example-4</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_kimm11_Documents_workspace_liberaliscomputing_pedigree-fhir-ig_fsh-generated_resources_observation-relationship-example-5"><b>/Users/kimm11/Documents/workspace/liberaliscomputing/pedigree-fhir-ig/fsh-generated/resources/observation-relationship-example-5</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_kimm11_Documents_workspace_liberaliscomputing_pedigree-fhir-ig_fsh-generated_resources_observation-relationship-example-6"><b>/Users/kimm11/Documents/workspace/liberaliscomputing/pedigree-fhir-ig/fsh-generated/resources/observation-relationship-example-6</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_kimm11_Documents_workspace_liberaliscomputing_pedigree-fhir-ig_fsh-generated_resources_observation-relationship-example-7"><b>/Users/kimm11/Documents/workspace/liberaliscomputing/pedigree-fhir-ig/fsh-generated/resources/observation-relationship-example-7</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_kimm11_Documents_workspace_liberaliscomputing_pedigree-fhir-ig_fsh-generated_resources_observation-relationship-example-8"><b>/Users/kimm11/Documents/workspace/liberaliscomputing/pedigree-fhir-ig/fsh-generated/resources/observation-relationship-example-8</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_kimm11_Documents_workspace_liberaliscomputing_pedigree-fhir-ig_fsh-generated_resources_observation-relationship-example-9"><b>/Users/kimm11/Documents/workspace/liberaliscomputing/pedigree-fhir-ig/fsh-generated/resources/observation-relationship-example-9</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_kimm11_Documents_workspace_liberaliscomputing_pedigree-fhir-ig_fsh-generated_resources_patient-individual-example-1"><b>/Users/kimm11/Documents/workspace/liberaliscomputing/pedigree-fhir-ig/fsh-generated/resources/patient-individual-example-1</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_kimm11_Documents_workspace_liberaliscomputing_pedigree-fhir-ig_fsh-generated_resources_patient-individual-example-10"><b>/Users/kimm11/Documents/workspace/liberaliscomputing/pedigree-fhir-ig/fsh-generated/resources/patient-individual-example-10</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_kimm11_Documents_workspace_liberaliscomputing_pedigree-fhir-ig_fsh-generated_resources_patient-individual-example-11"><b>/Users/kimm11/Documents/workspace/liberaliscomputing/pedigree-fhir-ig/fsh-generated/resources/patient-individual-example-11</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_kimm11_Documents_workspace_liberaliscomputing_pedigree-fhir-ig_fsh-generated_resources_patient-individual-example-12"><b>/Users/kimm11/Documents/workspace/liberaliscomputing/pedigree-fhir-ig/fsh-generated/resources/patient-individual-example-12</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_kimm11_Documents_workspace_liberaliscomputing_pedigree-fhir-ig_fsh-generated_resources_patient-individual-example-13"><b>/Users/kimm11/Documents/workspace/liberaliscomputing/pedigree-fhir-ig/fsh-generated/resources/patient-individual-example-13</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_kimm11_Documents_workspace_liberaliscomputing_pedigree-fhir-ig_fsh-generated_resources_patient-individual-example-2"><b>/Users/kimm11/Documents/workspace/liberaliscomputing/pedigree-fhir-ig/fsh-generated/resources/patient-individual-example-2</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_kimm11_Documents_workspace_liberaliscomputing_pedigree-fhir-ig_fsh-generated_resources_patient-individual-example-3"><b>/Users/kimm11/Documents/workspace/liberaliscomputing/pedigree-fhir-ig/fsh-generated/resources/patient-individual-example-3</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_kimm11_Documents_workspace_liberaliscomputing_pedigree-fhir-ig_fsh-generated_resources_patient-individual-example-4"><b>/Users/kimm11/Documents/workspace/liberaliscomputing/pedigree-fhir-ig/fsh-generated/resources/patient-individual-example-4</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_kimm11_Documents_workspace_liberaliscomputing_pedigree-fhir-ig_fsh-generated_resources_patient-individual-example-5"><b>/Users/kimm11/Documents/workspace/liberaliscomputing/pedigree-fhir-ig/fsh-generated/resources/patient-individual-example-5</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_kimm11_Documents_workspace_liberaliscomputing_pedigree-fhir-ig_fsh-generated_resources_patient-individual-example-6"><b>/Users/kimm11/Documents/workspace/liberaliscomputing/pedigree-fhir-ig/fsh-generated/resources/patient-individual-example-6</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_kimm11_Documents_workspace_liberaliscomputing_pedigree-fhir-ig_fsh-generated_resources_patient-individual-example-7"><b>/Users/kimm11/Documents/workspace/liberaliscomputing/pedigree-fhir-ig/fsh-generated/resources/patient-individual-example-7</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_kimm11_Documents_workspace_liberaliscomputing_pedigree-fhir-ig_fsh-generated_resources_patient-individual-example-8"><b>/Users/kimm11/Documents/workspace/liberaliscomputing/pedigree-fhir-ig/fsh-generated/resources/patient-individual-example-8</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_kimm11_Documents_workspace_liberaliscomputing_pedigree-fhir-ig_fsh-generated_resources_patient-individual-example-9"><b>/Users/kimm11/Documents/workspace/liberaliscomputing/pedigree-fhir-ig/fsh-generated/resources/patient-individual-example-9</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="internal"> </a>
+<h2><a href="">n/a</a></h2>
+ <table class="grid">
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/individual.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/pedigree.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/relationship.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/life-status.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/relationship.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/life-status.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/pedigree-sectioning.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/relationship.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Condition/condition-example-1.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Patient/individual-example-1.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Patient/individual-example-10.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Patient/individual-example-11.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Patient/individual-example-12.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Patient/individual-example-13.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Patient/individual-example-2.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Patient/individual-example-3.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Patient/individual-example-4.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Patient/individual-example-5.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Patient/individual-example-6.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Patient/individual-example-7.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Patient/individual-example-8.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Patient/individual-example-9.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Organization/organization-example-1.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Composition/pedigree-example-1.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Observation/relationship-example-1.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Observation/relationship-example-10.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Observation/relationship-example-11.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Observation/relationship-example-12.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Observation/relationship-example-13.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Observation/relationship-example-14.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Observation/relationship-example-15.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Observation/relationship-example-16.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Observation/relationship-example-2.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Observation/relationship-example-3.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Observation/relationship-example-4.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Observation/relationship-example-5.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Observation/relationship-example-6.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Observation/relationship-example-7.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Observation/relationship-example-8.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Observation/relationship-example-9.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="CodeSystem-life-status.change.history.html#8c989aac-22b6-477c-b713-94ec98be5839">CodeSystem-life-status.change.history.html#/html/body/div/div/div/p/a at Line 200, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="CodeSystem-life-status.html#1edde2fa-239a-44dc-81b4-525cf27a93a8">CodeSystem-life-status.html#/html/body/div/div/div/p/a at Line 207, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="CodeSystem-life-status.json.html#3c733d0b-d731-488c-8c9f-d8c7b77ee2ab">CodeSystem-life-status.json.html#/html/body/div/div/div/p/a at Line 228, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="CodeSystem-life-status.ttl.html#ffb3bb57-daa7-4de8-b135-af68d0ba88c2">CodeSystem-life-status.ttl.html#/html/body/div/div/div/p/a at Line 238, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="CodeSystem-life-status.xml.html#70f315ee-1c06-4a84-89bd-8d93d2e4a305">CodeSystem-life-status.xml.html#/html/body/div/div/div/p/a at Line 223, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="CodeSystem-pedigree-sectioning.change.history.html#2fdd53df-2da9-4365-8394-1778cd14e0a4">CodeSystem-pedigree-sectioning.change.history.html#/html/body/div/div/div/p/a at Line 200, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="CodeSystem-pedigree-sectioning.html#134edace-2557-4aae-8923-53d661aa7c4d">CodeSystem-pedigree-sectioning.html#/html/body/div/div/div/p/a at Line 205, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="CodeSystem-pedigree-sectioning.json.html#9cb972ce-4153-4e8a-bbae-6e2dfad3daed">CodeSystem-pedigree-sectioning.json.html#/html/body/div/div/div/p/a at Line 232, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="CodeSystem-pedigree-sectioning.ttl.html#af67cb6f-8ddb-4176-a0c1-4617e000f856">CodeSystem-pedigree-sectioning.ttl.html#/html/body/div/div/div/p/a at Line 242, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="CodeSystem-pedigree-sectioning.xml.html#86442a2a-cdac-43e3-b65f-2389917f21ec">CodeSystem-pedigree-sectioning.xml.html#/html/body/div/div/div/p/a at Line 227, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="CodeSystem-relationship.change.history.html#c98aa73a-38b7-4f4c-8aff-54f00765e59f">CodeSystem-relationship.change.history.html#/html/body/div/div/div/p/a at Line 200, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="CodeSystem-relationship.html#3d8cdb65-0307-411a-a9a3-4313c70adae4">CodeSystem-relationship.html#/html/body/div/div/div/p/a at Line 207, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="CodeSystem-relationship.json.html#12f4286f-496d-477c-bbd2-f910c60f6be3">CodeSystem-relationship.json.html#/html/body/div/div/div/p/a at Line 320, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="CodeSystem-relationship.ttl.html#51737abd-5611-44bc-a80a-b5479c14aee7">CodeSystem-relationship.ttl.html#/html/body/div/div/div/p/a at Line 330, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="CodeSystem-relationship.xml.html#b4a9cabf-af5d-40cf-9eaf-244409130684">CodeSystem-relationship.xml.html#/html/body/div/div/div/p/a at Line 315, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Composition-pedigree-example-1.change.history.html#2caf8703-b4b6-4967-b17a-eed28355fce6">Composition-pedigree-example-1.change.history.html#/html/body/div/div/div/p/a at Line 200, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Composition-pedigree-example-1.html#feb9118e-8ec9-4eb3-a4ec-54e4ed2c3ef4">Composition-pedigree-example-1.html#/html/body/div/div/div/p/a at Line 185, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Composition-pedigree-example-1.json.html#4bb83eb1-c664-4afb-9434-52661396688f">Composition-pedigree-example-1.json.html#/html/body/div/div/div/p/a at Line 371, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Composition-pedigree-example-1.ttl.html#7b8a9b86-3aee-4580-9f4b-68615c555ff3">Composition-pedigree-example-1.ttl.html#/html/body/div/div/div/p/a at Line 337, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Composition-pedigree-example-1.xml.html#a3e24f43-b2c8-4daa-803c-918453a1fa0f">Composition-pedigree-example-1.xml.html#/html/body/div/div/div/p/a at Line 352, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Condition-condition-example-1.change.history.html#b743eb1e-2caa-410c-b5ca-8cf852d32d9e">Condition-condition-example-1.change.history.html#/html/body/div/div/div/p/a at Line 200, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Condition-condition-example-1.html#22c66c89-ef2d-4cb7-a1be-7a78b2e0ff93">Condition-condition-example-1.html#/html/body/div/div/div/p/a at Line 185, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Condition-condition-example-1.json.html#7389d79e-ed4c-40a3-9265-478311034162">Condition-condition-example-1.json.html#/html/body/div/div/div/p/a at Line 244, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Condition-condition-example-1.ttl.html#9b77a66e-2cc7-40dc-8740-5a29bc6c56f9">Condition-condition-example-1.ttl.html#/html/body/div/div/div/p/a at Line 248, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Condition-condition-example-1.xml.html#5791c64c-bbd0-4a55-a5aa-bb941d610ced">Condition-condition-example-1.xml.html#/html/body/div/div/div/p/a at Line 232, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-relationship-example-1.change.history.html#36d753a1-b4ff-44af-a6c5-4894f5308dbf">Observation-relationship-example-1.change.history.html#/html/body/div/div/div/p/a at Line 200, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-relationship-example-1.html#380ac095-d607-49ab-8eeb-ed9db4b24e39">Observation-relationship-example-1.html#/html/body/div/div/div/p/a at Line 185, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-relationship-example-1.json.html#59459012-3c4b-4f7f-85b7-daaa6597206d">Observation-relationship-example-1.json.html#/html/body/div/div/div/p/a at Line 232, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-relationship-example-1.ttl.html#43a51cef-1994-4913-923d-cb4f600b9d74">Observation-relationship-example-1.ttl.html#/html/body/div/div/div/p/a at Line 241, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-relationship-example-1.xml.html#6a2d3dd2-27fa-448c-8826-4c1a1f94e09c">Observation-relationship-example-1.xml.html#/html/body/div/div/div/p/a at Line 223, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-relationship-example-10.change.history.html#4f0e9b17-809d-4751-8010-ef175609e762">Observation-relationship-example-10.change.history.html#/html/body/div/div/div/p/a at Line 200, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-relationship-example-10.html#985a7609-2c4a-4435-8e0d-e66eb7044d73">Observation-relationship-example-10.html#/html/body/div/div/div/p/a at Line 185, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-relationship-example-10.json.html#9692c67c-70f4-4885-b4c8-21b3e424e781">Observation-relationship-example-10.json.html#/html/body/div/div/div/p/a at Line 232, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-relationship-example-10.ttl.html#04637452-6b95-4c79-8ec1-9d63d90b2d6f">Observation-relationship-example-10.ttl.html#/html/body/div/div/div/p/a at Line 241, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-relationship-example-10.xml.html#d9d433c8-f119-44f6-b6fa-03e11a8628c2">Observation-relationship-example-10.xml.html#/html/body/div/div/div/p/a at Line 223, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-relationship-example-11.change.history.html#174e1a45-9d9f-4203-8e62-7a1dce9a5dfa">Observation-relationship-example-11.change.history.html#/html/body/div/div/div/p/a at Line 200, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-relationship-example-11.html#efd62533-b18d-4544-865e-4b7610f8f137">Observation-relationship-example-11.html#/html/body/div/div/div/p/a at Line 185, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-relationship-example-11.json.html#e6e7d4f8-bbe6-472a-aa24-a57eb029e7d9">Observation-relationship-example-11.json.html#/html/body/div/div/div/p/a at Line 232, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-relationship-example-11.ttl.html#0cd532df-358e-42b6-b311-34a5d4ddf524">Observation-relationship-example-11.ttl.html#/html/body/div/div/div/p/a at Line 241, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-relationship-example-11.xml.html#a0c107e0-a994-4ae9-82e4-84fe62cc523c">Observation-relationship-example-11.xml.html#/html/body/div/div/div/p/a at Line 223, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-relationship-example-12.change.history.html#5983b506-a311-4966-b1a3-280023296009">Observation-relationship-example-12.change.history.html#/html/body/div/div/div/p/a at Line 200, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-relationship-example-12.html#dbd2cf87-bf72-40f4-a905-f7832621e382">Observation-relationship-example-12.html#/html/body/div/div/div/p/a at Line 185, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-relationship-example-12.json.html#5b52f7f4-da39-48c1-926c-17adadfecf34">Observation-relationship-example-12.json.html#/html/body/div/div/div/p/a at Line 232, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-relationship-example-12.ttl.html#efca1116-40d7-4566-a501-7817ad0a9d9a">Observation-relationship-example-12.ttl.html#/html/body/div/div/div/p/a at Line 241, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-relationship-example-12.xml.html#3c678258-a632-4674-9b0d-6fd3d82ce51d">Observation-relationship-example-12.xml.html#/html/body/div/div/div/p/a at Line 223, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-relationship-example-13.change.history.html#d3abec1f-1d52-41ff-828c-81acf9f89610">Observation-relationship-example-13.change.history.html#/html/body/div/div/div/p/a at Line 200, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-relationship-example-13.html#c0ba2eb7-f0a2-4c44-a195-82e988b19260">Observation-relationship-example-13.html#/html/body/div/div/div/p/a at Line 185, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-relationship-example-13.json.html#9efcabc8-594b-49d6-8c01-df529ef992bc">Observation-relationship-example-13.json.html#/html/body/div/div/div/p/a at Line 232, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-relationship-example-13.ttl.html#fabc6f8d-3199-4c7f-bf7b-dd4b27ea55e6">Observation-relationship-example-13.ttl.html#/html/body/div/div/div/p/a at Line 241, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-relationship-example-13.xml.html#54ecbdab-41be-47d3-a025-a5a8f3ebcfa2">Observation-relationship-example-13.xml.html#/html/body/div/div/div/p/a at Line 223, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-relationship-example-14.change.history.html#4c8df3d6-6d89-4bcd-981b-5bda6161bf70">Observation-relationship-example-14.change.history.html#/html/body/div/div/div/p/a at Line 200, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-relationship-example-14.html#52f464f7-3afd-446d-a068-941c61fafe7d">Observation-relationship-example-14.html#/html/body/div/div/div/p/a at Line 185, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-relationship-example-14.json.html#831667bc-83a9-4e45-9bff-7ac31ba25d72">Observation-relationship-example-14.json.html#/html/body/div/div/div/p/a at Line 232, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-relationship-example-14.ttl.html#1d40feba-c952-40e0-8c94-81ae4eda7ae4">Observation-relationship-example-14.ttl.html#/html/body/div/div/div/p/a at Line 241, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-relationship-example-14.xml.html#608e7c29-b72a-4158-a977-55c04079b9d8">Observation-relationship-example-14.xml.html#/html/body/div/div/div/p/a at Line 223, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-relationship-example-15.change.history.html#aa40f223-aa7b-4768-bd18-7277988acc13">Observation-relationship-example-15.change.history.html#/html/body/div/div/div/p/a at Line 200, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-relationship-example-15.html#1822e432-8fb3-40c7-b52f-4b36ad4881b4">Observation-relationship-example-15.html#/html/body/div/div/div/p/a at Line 185, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-relationship-example-15.json.html#44791301-a6e7-485c-8a31-e84caf724772">Observation-relationship-example-15.json.html#/html/body/div/div/div/p/a at Line 232, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-relationship-example-15.ttl.html#204b61a9-ae6d-48f9-847d-1a9624e36d69">Observation-relationship-example-15.ttl.html#/html/body/div/div/div/p/a at Line 241, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-relationship-example-15.xml.html#c55410ca-f793-4015-97b2-d895a413c66d">Observation-relationship-example-15.xml.html#/html/body/div/div/div/p/a at Line 223, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-relationship-example-16.change.history.html#2bb0e85b-2b96-441b-b360-150c4d30dc85">Observation-relationship-example-16.change.history.html#/html/body/div/div/div/p/a at Line 200, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-relationship-example-16.html#1e862802-33fd-426c-bdfb-3f8b1e31a7c4">Observation-relationship-example-16.html#/html/body/div/div/div/p/a at Line 185, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-relationship-example-16.json.html#caf2275e-ab5a-4075-9d07-5b203e372d8d">Observation-relationship-example-16.json.html#/html/body/div/div/div/p/a at Line 232, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-relationship-example-16.ttl.html#0c4b2d50-ed04-4d94-aa55-80d7a26e639b">Observation-relationship-example-16.ttl.html#/html/body/div/div/div/p/a at Line 241, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-relationship-example-16.xml.html#a629c5f1-7776-4d6d-8a40-db873704b3d0">Observation-relationship-example-16.xml.html#/html/body/div/div/div/p/a at Line 223, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-relationship-example-2.change.history.html#acd2d650-e2c4-46ee-a9cc-abc7cf09ad90">Observation-relationship-example-2.change.history.html#/html/body/div/div/div/p/a at Line 200, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-relationship-example-2.html#f264fa6d-47d6-48f5-a91d-8fec93c1fef7">Observation-relationship-example-2.html#/html/body/div/div/div/p/a at Line 185, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-relationship-example-2.json.html#7c2b4850-ae0e-460f-8dc8-03ed9dec7034">Observation-relationship-example-2.json.html#/html/body/div/div/div/p/a at Line 232, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-relationship-example-2.ttl.html#5c497d47-3adf-49d1-af94-82f54fda0b74">Observation-relationship-example-2.ttl.html#/html/body/div/div/div/p/a at Line 241, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-relationship-example-2.xml.html#ae313d07-42a6-475b-9043-01b1bd0720e3">Observation-relationship-example-2.xml.html#/html/body/div/div/div/p/a at Line 223, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-relationship-example-3.change.history.html#bcf0342f-c102-48db-bf78-39ca06b5afc4">Observation-relationship-example-3.change.history.html#/html/body/div/div/div/p/a at Line 200, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-relationship-example-3.html#e9ba7de9-41d3-4109-8316-ba6d9e7b38f6">Observation-relationship-example-3.html#/html/body/div/div/div/p/a at Line 185, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-relationship-example-3.json.html#e829acf5-719f-4126-9aa7-9c7fcae65ba1">Observation-relationship-example-3.json.html#/html/body/div/div/div/p/a at Line 232, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-relationship-example-3.ttl.html#ee9c352c-0ce4-4398-95e9-9abf63411b25">Observation-relationship-example-3.ttl.html#/html/body/div/div/div/p/a at Line 241, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-relationship-example-3.xml.html#5d3cc426-a101-41d9-ad80-c1e8db3834bd">Observation-relationship-example-3.xml.html#/html/body/div/div/div/p/a at Line 223, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-relationship-example-4.change.history.html#3c4c8dca-8dc0-45ed-8a52-ae8e82b6867d">Observation-relationship-example-4.change.history.html#/html/body/div/div/div/p/a at Line 200, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-relationship-example-4.html#6760391f-9acb-41b5-9bf5-74683f7fffe0">Observation-relationship-example-4.html#/html/body/div/div/div/p/a at Line 185, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-relationship-example-4.json.html#f6188af2-d583-4a61-92dc-4913704282b3">Observation-relationship-example-4.json.html#/html/body/div/div/div/p/a at Line 232, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-relationship-example-4.ttl.html#012af142-fa5c-4532-a2c6-7499c9b2b785">Observation-relationship-example-4.ttl.html#/html/body/div/div/div/p/a at Line 241, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-relationship-example-4.xml.html#ce771e78-c784-4a48-b0e8-f0072a4eb1f1">Observation-relationship-example-4.xml.html#/html/body/div/div/div/p/a at Line 223, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-relationship-example-5.change.history.html#b380e9da-2e1d-4f79-a4f5-a9d3234fa8b8">Observation-relationship-example-5.change.history.html#/html/body/div/div/div/p/a at Line 200, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-relationship-example-5.html#207f299b-16d1-4936-b1c3-9f73715671bd">Observation-relationship-example-5.html#/html/body/div/div/div/p/a at Line 185, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-relationship-example-5.json.html#eeaad205-6e96-4d24-a95c-91257a10a705">Observation-relationship-example-5.json.html#/html/body/div/div/div/p/a at Line 232, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-relationship-example-5.ttl.html#7f8816bd-795a-4563-b903-3824c847b3aa">Observation-relationship-example-5.ttl.html#/html/body/div/div/div/p/a at Line 241, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-relationship-example-5.xml.html#f7dc2611-aedd-4653-b7cb-0df83d4e9878">Observation-relationship-example-5.xml.html#/html/body/div/div/div/p/a at Line 223, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-relationship-example-6.change.history.html#1f02290f-3198-44d1-beee-2d5ff3eb4409">Observation-relationship-example-6.change.history.html#/html/body/div/div/div/p/a at Line 200, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-relationship-example-6.html#ec2790b0-d77c-46d9-b9b1-02111a89e1ae">Observation-relationship-example-6.html#/html/body/div/div/div/p/a at Line 185, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-relationship-example-6.json.html#e5fbe918-2835-47dd-abcb-695dd61bc9b2">Observation-relationship-example-6.json.html#/html/body/div/div/div/p/a at Line 232, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-relationship-example-6.ttl.html#6e2ad55f-361b-4a43-ac18-55272f3d7158">Observation-relationship-example-6.ttl.html#/html/body/div/div/div/p/a at Line 241, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-relationship-example-6.xml.html#a55d5550-de28-46a8-85ba-079b909e05d0">Observation-relationship-example-6.xml.html#/html/body/div/div/div/p/a at Line 223, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-relationship-example-7.change.history.html#4a4d7188-2509-4715-ab7b-03f114df6130">Observation-relationship-example-7.change.history.html#/html/body/div/div/div/p/a at Line 200, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-relationship-example-7.html#84b33f1a-a283-4d02-8c41-dc14eb92eca8">Observation-relationship-example-7.html#/html/body/div/div/div/p/a at Line 185, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-relationship-example-7.json.html#bd8f40bb-6bcc-45a6-ba95-189baeed1cee">Observation-relationship-example-7.json.html#/html/body/div/div/div/p/a at Line 232, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-relationship-example-7.ttl.html#b80e61db-a269-417e-b329-4a9c220449c3">Observation-relationship-example-7.ttl.html#/html/body/div/div/div/p/a at Line 241, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-relationship-example-7.xml.html#43847b3e-45bb-4a3c-8722-846b25b4a5e6">Observation-relationship-example-7.xml.html#/html/body/div/div/div/p/a at Line 223, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-relationship-example-8.change.history.html#964007de-80b2-4a89-97dd-97b7ce9abf6a">Observation-relationship-example-8.change.history.html#/html/body/div/div/div/p/a at Line 200, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-relationship-example-8.html#a3c3aa70-2932-48a8-be9e-ee9716d73ae2">Observation-relationship-example-8.html#/html/body/div/div/div/p/a at Line 185, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-relationship-example-8.json.html#e4519f17-c721-40c2-bc88-24895c6639ae">Observation-relationship-example-8.json.html#/html/body/div/div/div/p/a at Line 232, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-relationship-example-8.ttl.html#0ca0f1df-f715-44dc-a172-423774d97afa">Observation-relationship-example-8.ttl.html#/html/body/div/div/div/p/a at Line 241, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-relationship-example-8.xml.html#587d846b-e6d0-4bba-8831-5ae57fcdee3a">Observation-relationship-example-8.xml.html#/html/body/div/div/div/p/a at Line 223, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-relationship-example-9.change.history.html#af3a46cb-2aea-4217-9985-0800abf2bbeb">Observation-relationship-example-9.change.history.html#/html/body/div/div/div/p/a at Line 200, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-relationship-example-9.html#13c0ae64-59c2-49f1-8249-81da036d905d">Observation-relationship-example-9.html#/html/body/div/div/div/p/a at Line 185, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-relationship-example-9.json.html#5d442963-38ab-4099-9f3a-93641504f6c4">Observation-relationship-example-9.json.html#/html/body/div/div/div/p/a at Line 232, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-relationship-example-9.ttl.html#e8f24b5d-0ebf-44b8-9240-5103914cbc55">Observation-relationship-example-9.ttl.html#/html/body/div/div/div/p/a at Line 241, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-relationship-example-9.xml.html#e9d973a7-5af7-441c-b54e-fdfaaa279b43">Observation-relationship-example-9.xml.html#/html/body/div/div/div/p/a at Line 223, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Organization-organization-example-1.change.history.html#831e1759-12f2-4ab4-bda1-03638a38185f">Organization-organization-example-1.change.history.html#/html/body/div/div/div/p/a at Line 200, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Organization-organization-example-1.html#80d46cc8-07d6-4614-bee9-fdbafc98a5f7">Organization-organization-example-1.html#/html/body/div/div/div/p/a at Line 185, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Organization-organization-example-1.json.html#c8bbe397-506a-4181-ba61-f6539d8514ae">Organization-organization-example-1.json.html#/html/body/div/div/div/p/a at Line 209, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Organization-organization-example-1.ttl.html#ea00d930-dead-4469-a714-3b25ce1a9634">Organization-organization-example-1.ttl.html#/html/body/div/div/div/p/a at Line 220, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Organization-organization-example-1.xml.html#ecab3dee-fff3-49de-840f-eec2564f63ab">Organization-organization-example-1.xml.html#/html/body/div/div/div/p/a at Line 205, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-individual-example-1.change.history.html#6cdb1836-ec01-4ea8-92a6-faef133e6385">Patient-individual-example-1.change.history.html#/html/body/div/div/div/p/a at Line 200, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-individual-example-1.html#3b1c8ebb-feba-4eea-900f-b00e9ed39da5">Patient-individual-example-1.html#/html/body/div/div/div/p/a at Line 185, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-individual-example-1.json.html#9d333041-511d-4007-822f-859448bea215">Patient-individual-example-1.json.html#/html/body/div/div/div/p/a at Line 228, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-individual-example-1.ttl.html#6c2b7729-20de-4b11-a7e1-2a9f521798cd">Patient-individual-example-1.ttl.html#/html/body/div/div/div/p/a at Line 238, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-individual-example-1.xml.html#f9637057-cb2b-4a2e-a15a-36035c0e1864">Patient-individual-example-1.xml.html#/html/body/div/div/div/p/a at Line 221, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-individual-example-10.change.history.html#6aadd4f1-a24f-41a8-9565-de9e63543e94">Patient-individual-example-10.change.history.html#/html/body/div/div/div/p/a at Line 200, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-individual-example-10.html#2ac37cd5-f11b-459c-8998-676ec471e358">Patient-individual-example-10.html#/html/body/div/div/div/p/a at Line 185, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-individual-example-10.json.html#c75b0a01-aafc-42d4-8625-1d39b7ff0fa4">Patient-individual-example-10.json.html#/html/body/div/div/div/p/a at Line 227, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-individual-example-10.ttl.html#540b4672-55c3-46bd-b5d8-54a5700df79e">Patient-individual-example-10.ttl.html#/html/body/div/div/div/p/a at Line 237, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-individual-example-10.xml.html#55f4669b-a0eb-44fd-8692-c029bc4f0995">Patient-individual-example-10.xml.html#/html/body/div/div/div/p/a at Line 220, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-individual-example-11.change.history.html#3ac31b41-3dfa-4e8e-9321-19a81b9f9ebe">Patient-individual-example-11.change.history.html#/html/body/div/div/div/p/a at Line 200, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-individual-example-11.html#e8c01b85-8ad8-4e07-aae6-4f33e265ef5f">Patient-individual-example-11.html#/html/body/div/div/div/p/a at Line 185, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-individual-example-11.json.html#1ef6c194-5d87-4204-83d9-7ec3d1eb67dc">Patient-individual-example-11.json.html#/html/body/div/div/div/p/a at Line 227, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-individual-example-11.ttl.html#434af74f-808b-493e-9b7a-6ac1d3917ae3">Patient-individual-example-11.ttl.html#/html/body/div/div/div/p/a at Line 237, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-individual-example-11.xml.html#f0bbe720-2b48-48a7-8b82-6d5e0f635b52">Patient-individual-example-11.xml.html#/html/body/div/div/div/p/a at Line 220, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-individual-example-12.change.history.html#72f27e06-31bf-4463-9243-b5d32c035588">Patient-individual-example-12.change.history.html#/html/body/div/div/div/p/a at Line 200, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-individual-example-12.html#d8270427-1396-462d-bdeb-d5dc2fc2c201">Patient-individual-example-12.html#/html/body/div/div/div/p/a at Line 185, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-individual-example-12.json.html#044c922a-9622-4663-aa82-dc5e2cbb0719">Patient-individual-example-12.json.html#/html/body/div/div/div/p/a at Line 227, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-individual-example-12.ttl.html#2f9de655-d7e5-4169-961d-a533cc8dd894">Patient-individual-example-12.ttl.html#/html/body/div/div/div/p/a at Line 237, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-individual-example-12.xml.html#f281c660-c3f2-4bd5-872c-88b4b0bcc548">Patient-individual-example-12.xml.html#/html/body/div/div/div/p/a at Line 220, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-individual-example-13.change.history.html#f5af4975-17dd-41b8-b842-88e1ac65ea47">Patient-individual-example-13.change.history.html#/html/body/div/div/div/p/a at Line 200, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-individual-example-13.html#d2dea994-7540-4b81-b33f-21ad43265f82">Patient-individual-example-13.html#/html/body/div/div/div/p/a at Line 185, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-individual-example-13.json.html#385c4090-ca7a-44c1-a00a-541731cfd216">Patient-individual-example-13.json.html#/html/body/div/div/div/p/a at Line 227, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-individual-example-13.ttl.html#50b4f6ba-b16c-4bd0-a4e8-ae725194fe42">Patient-individual-example-13.ttl.html#/html/body/div/div/div/p/a at Line 237, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-individual-example-13.xml.html#eb9323a9-11eb-4b44-82f3-2182fa5347b6">Patient-individual-example-13.xml.html#/html/body/div/div/div/p/a at Line 220, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-individual-example-2.change.history.html#531ddb37-8fd8-453b-b10d-32dda77daf40">Patient-individual-example-2.change.history.html#/html/body/div/div/div/p/a at Line 200, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-individual-example-2.html#865e14d5-dfcf-44a5-b224-8f01506ea0a9">Patient-individual-example-2.html#/html/body/div/div/div/p/a at Line 185, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-individual-example-2.json.html#3c883cb8-6d37-4b1d-98c2-c3c7053ab086">Patient-individual-example-2.json.html#/html/body/div/div/div/p/a at Line 227, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-individual-example-2.ttl.html#4a9e0c2c-8141-46df-85f9-12fd8b97ff74">Patient-individual-example-2.ttl.html#/html/body/div/div/div/p/a at Line 237, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-individual-example-2.xml.html#457e6cd7-b4cb-44ed-b4dc-896381c64b74">Patient-individual-example-2.xml.html#/html/body/div/div/div/p/a at Line 220, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-individual-example-3.change.history.html#f3f73507-078b-4d52-9b29-bd5b383bd4b5">Patient-individual-example-3.change.history.html#/html/body/div/div/div/p/a at Line 200, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-individual-example-3.html#e84e355e-fbe8-4b36-8c06-5af6d11ac7c4">Patient-individual-example-3.html#/html/body/div/div/div/p/a at Line 185, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-individual-example-3.json.html#c00df2c0-2bbc-4c23-a879-64ef78859b60">Patient-individual-example-3.json.html#/html/body/div/div/div/p/a at Line 227, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-individual-example-3.ttl.html#8a9631d0-3953-4659-9e52-65583a6ef41e">Patient-individual-example-3.ttl.html#/html/body/div/div/div/p/a at Line 237, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-individual-example-3.xml.html#e77b9784-dd4b-4f00-bc07-e2d0e43a602a">Patient-individual-example-3.xml.html#/html/body/div/div/div/p/a at Line 220, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-individual-example-4.change.history.html#c41f5d36-4323-4996-9b51-d55f49873321">Patient-individual-example-4.change.history.html#/html/body/div/div/div/p/a at Line 200, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-individual-example-4.html#c964f0fd-9821-4bdb-b2ad-7d0531c44d1c">Patient-individual-example-4.html#/html/body/div/div/div/p/a at Line 185, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-individual-example-4.json.html#a02c7b46-dcda-409b-bde3-b8f452f55ca7">Patient-individual-example-4.json.html#/html/body/div/div/div/p/a at Line 227, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-individual-example-4.ttl.html#6364e0f3-b65e-4e95-9da1-359b4d9e69e6">Patient-individual-example-4.ttl.html#/html/body/div/div/div/p/a at Line 237, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-individual-example-4.xml.html#cc2cab1c-9f16-4997-a6cb-5000cdd6ce9a">Patient-individual-example-4.xml.html#/html/body/div/div/div/p/a at Line 220, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-individual-example-5.change.history.html#39ad4fba-4b1e-45a5-8bd8-336174c87602">Patient-individual-example-5.change.history.html#/html/body/div/div/div/p/a at Line 200, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-individual-example-5.html#20a98218-5475-4375-83b7-a4d52854946b">Patient-individual-example-5.html#/html/body/div/div/div/p/a at Line 185, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-individual-example-5.json.html#065d0e0d-173a-4c08-ad16-1021ebb2ffe6">Patient-individual-example-5.json.html#/html/body/div/div/div/p/a at Line 227, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-individual-example-5.ttl.html#40503d5f-5575-4b9b-8f72-bb98a5407945">Patient-individual-example-5.ttl.html#/html/body/div/div/div/p/a at Line 237, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-individual-example-5.xml.html#1e0171ce-aee8-4adb-891f-31577e212916">Patient-individual-example-5.xml.html#/html/body/div/div/div/p/a at Line 220, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-individual-example-6.change.history.html#e156e1e8-9e5d-41c2-a2c2-b128f343dc07">Patient-individual-example-6.change.history.html#/html/body/div/div/div/p/a at Line 200, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-individual-example-6.html#c6dfc9c1-0445-4fc9-bfa6-aab2bac4f903">Patient-individual-example-6.html#/html/body/div/div/div/p/a at Line 185, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-individual-example-6.json.html#e5bec063-8163-4d2b-975f-bd332acebbdd">Patient-individual-example-6.json.html#/html/body/div/div/div/p/a at Line 227, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-individual-example-6.ttl.html#6c288b12-fc38-4426-b16d-5bda87438fe6">Patient-individual-example-6.ttl.html#/html/body/div/div/div/p/a at Line 237, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-individual-example-6.xml.html#947d7442-8f7a-4ab4-9517-c679d37d7070">Patient-individual-example-6.xml.html#/html/body/div/div/div/p/a at Line 220, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-individual-example-7.change.history.html#f682935b-051f-4b51-9fc6-8d88b95588c8">Patient-individual-example-7.change.history.html#/html/body/div/div/div/p/a at Line 200, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-individual-example-7.html#b887f0f0-95a4-4c43-8337-684a733676b1">Patient-individual-example-7.html#/html/body/div/div/div/p/a at Line 185, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-individual-example-7.json.html#e19b0cc3-4070-4c5f-a7a0-45dde4838b45">Patient-individual-example-7.json.html#/html/body/div/div/div/p/a at Line 227, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-individual-example-7.ttl.html#cb387d4a-2884-4a87-a0f1-7f5a1fdbe2c6">Patient-individual-example-7.ttl.html#/html/body/div/div/div/p/a at Line 237, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-individual-example-7.xml.html#7f16015a-dd49-41eb-8eec-78a20d7ab7d8">Patient-individual-example-7.xml.html#/html/body/div/div/div/p/a at Line 220, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-individual-example-8.change.history.html#ac41d4ba-a5a2-4f7a-a319-e915832cbee2">Patient-individual-example-8.change.history.html#/html/body/div/div/div/p/a at Line 200, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-individual-example-8.html#9ad95813-7f69-4194-a174-dda9db751919">Patient-individual-example-8.html#/html/body/div/div/div/p/a at Line 185, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-individual-example-8.json.html#32ff8956-950e-42a2-a325-985ecfa93e06">Patient-individual-example-8.json.html#/html/body/div/div/div/p/a at Line 227, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-individual-example-8.ttl.html#1833413c-2d47-4aef-a8f2-b295110ee242">Patient-individual-example-8.ttl.html#/html/body/div/div/div/p/a at Line 237, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-individual-example-8.xml.html#a9716e5f-89b5-4749-b6e2-a4facb53afb0">Patient-individual-example-8.xml.html#/html/body/div/div/div/p/a at Line 220, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-individual-example-9.change.history.html#76ef9009-af4a-4397-a0f4-62edeca86650">Patient-individual-example-9.change.history.html#/html/body/div/div/div/p/a at Line 200, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-individual-example-9.html#d2555004-0756-4e86-8a90-f395f70d9fc9">Patient-individual-example-9.html#/html/body/div/div/div/p/a at Line 185, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-individual-example-9.json.html#5959efeb-0eb0-431f-8824-795002776d2b">Patient-individual-example-9.json.html#/html/body/div/div/div/p/a at Line 227, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-individual-example-9.ttl.html#81a404c5-4234-4198-a736-fe2385c0db2f">Patient-individual-example-9.ttl.html#/html/body/div/div/div/p/a at Line 237, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-individual-example-9.xml.html#726b6d0d-a490-4dab-be46-a7b8256857c4">Patient-individual-example-9.xml.html#/html/body/div/div/div/p/a at Line 220, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-affected-definitions.html#8af6b10f-87b5-4a78-a281-6916338fd893">StructureDefinition-affected-definitions.html#/html/body/div/div/div/p/a at Line 268, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-affected-mappings.html#805447c0-dc80-49f2-9ae3-d50a909926cc">StructureDefinition-affected-mappings.html#/html/body/div/div/div/p/a at Line 238, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-affected.html#f9130882-b707-418d-ac0b-71023352c364">StructureDefinition-affected.html#/html/body/div/div/div/p/a at Line 463, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-affected.profile.history.html#ac40e36e-83a2-48c2-87b4-ff64fd0d31f5">StructureDefinition-affected.profile.history.html#/html/body/div/div/div/p/a at Line 221, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-affected.profile.json.html#a3bbed8c-139f-4375-be3a-2eb419a3e634">StructureDefinition-affected.profile.json.html#/html/body/div/div/div/p/a at Line 508, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-affected.profile.ttl.html#8bdb7658-8de8-4696-9fcc-86f0991f1712">StructureDefinition-affected.profile.ttl.html#/html/body/div/div/div/p/a at Line 483, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-affected.profile.xml.html#8a283bde-10f2-4992-90ae-a31b3fac8e76">StructureDefinition-affected.profile.xml.html#/html/body/div/div/div/p/a at Line 469, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-individual-definitions.html#93eec937-7f6e-4cd1-8a2b-09b9a03615b0">StructureDefinition-individual-definitions.html#/html/body/div/div/div/p/a at Line 752, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-individual-examples.html#3bd3df72-74c2-4022-afd2-4163f8aea4b6">StructureDefinition-individual-examples.html#/html/body/div/div/div/p/a at Line 325, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-individual-mappings.html#52977104-479e-41e7-97e9-db8af0fd3702">StructureDefinition-individual-mappings.html#/html/body/div/div/div/p/a at Line 353, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-individual.html#4206aa7f-fcb0-4220-bb78-72ecc0106812">StructureDefinition-individual.html#/html/body/div/div/div/p/a at Line 820, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-individual.profile.history.html#023e70f5-f4de-4afd-a611-ef5174e4ab2e">StructureDefinition-individual.profile.history.html#/html/body/div/div/div/p/a at Line 231, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-individual.profile.json.html#9369e3ea-9f18-44c7-9cfa-6dbb56386bf4">StructureDefinition-individual.profile.json.html#/html/body/div/div/div/p/a at Line 2680, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-individual.profile.ttl.html#0cabc382-da98-420c-8807-82f21a2bb183">StructureDefinition-individual.profile.ttl.html#/html/body/div/div/div/p/a at Line 2369, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-individual.profile.xml.html#a7c06215-b288-477c-9b7e-e5df40a1ea6b">StructureDefinition-individual.profile.xml.html#/html/body/div/div/div/p/a at Line 2445, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-life-status-definitions.html#28247282-9fa2-4fb1-8853-2fee5ac81467">StructureDefinition-life-status-definitions.html#/html/body/div/div/div/p/a at Line 279, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-life-status-mappings.html#9dafccef-bacd-40b0-8a59-f310da88a0af">StructureDefinition-life-status-mappings.html#/html/body/div/div/div/p/a at Line 239, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-life-status.html#a6d509dc-5075-49e6-9431-48a3760eefa8">StructureDefinition-life-status.html#/html/body/div/div/div/p/a at Line 495, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-life-status.profile.history.html#5105c9fa-d844-40cd-9eae-bb1c51554782">StructureDefinition-life-status.profile.history.html#/html/body/div/div/div/p/a at Line 221, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-life-status.profile.json.html#cac2318d-8a42-42df-a6d5-da3a8c454a65">StructureDefinition-life-status.profile.json.html#/html/body/div/div/div/p/a at Line 579, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-life-status.profile.ttl.html#9eb29424-5def-46fe-a3f4-019647cdb4ae">StructureDefinition-life-status.profile.ttl.html#/html/body/div/div/div/p/a at Line 543, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-life-status.profile.xml.html#b7b377f1-e459-4c24-8e6f-99af4e501b96">StructureDefinition-life-status.profile.xml.html#/html/body/div/div/div/p/a at Line 532, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-pedigree-definitions.html#ea987058-8566-42e2-b3ca-77f2ce7b4797">StructureDefinition-pedigree-definitions.html#/html/body/div/div/div/p/a at Line 1418, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-pedigree-examples.html#02d084a3-c6ca-4ae0-a040-7b202387461b">StructureDefinition-pedigree-examples.html#/html/body/div/div/div/p/a at Line 253, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-pedigree-mappings.html#ca480a2e-9f66-4ec6-9771-2fec456c1d90">StructureDefinition-pedigree-mappings.html#/html/body/div/div/div/p/a at Line 488, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-pedigree.html#90d8b940-07d3-4910-a50e-3ede3a676f01">StructureDefinition-pedigree.html#/html/body/div/div/div/p/a at Line 1308, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-pedigree.profile.history.html#5882db85-44a0-4b87-994b-6c3ec866ad76">StructureDefinition-pedigree.profile.history.html#/html/body/div/div/div/p/a at Line 231, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-pedigree.profile.json.html#dcebcbfb-4429-4f88-9c21-c8ca1bba50f2">StructureDefinition-pedigree.profile.json.html#/html/body/div/div/div/p/a at Line 5992, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-pedigree.profile.ttl.html#2a9ead50-248c-467c-a867-512852a5aeb5">StructureDefinition-pedigree.profile.ttl.html#/html/body/div/div/div/p/a at Line 5287, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-pedigree.profile.xml.html#45c3236d-49fd-4d19-bfd6-18b0e4970ead">StructureDefinition-pedigree.profile.xml.html#/html/body/div/div/div/p/a at Line 5398, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-relationship-definitions.html#5047a078-a99b-4fec-9ab3-33b0ea4aaa7e">StructureDefinition-relationship-definitions.html#/html/body/div/div/div/p/a at Line 807, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-relationship-examples.html#1e32b702-dbe4-4a92-8ad1-97ab036085f2">StructureDefinition-relationship-examples.html#/html/body/div/div/div/p/a at Line 343, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-relationship-mappings.html#ebbf94a6-b163-4f2a-bf77-b37bc2d75bb9">StructureDefinition-relationship-mappings.html#/html/body/div/div/div/p/a at Line 404, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-relationship.html#e8a12a04-d3ce-4c93-9387-505ddc5fad6e">StructureDefinition-relationship.html#/html/body/div/div/div/p/a at Line 875, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-relationship.profile.history.html#1fcc0033-f284-4a9d-8174-8f10567a1eb3">StructureDefinition-relationship.profile.history.html#/html/body/div/div/div/p/a at Line 231, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-relationship.profile.json.html#4e2cafe9-c812-4e0c-a145-da0befa47a01">StructureDefinition-relationship.profile.json.html#/html/body/div/div/div/p/a at Line 3057, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-relationship.profile.ttl.html#7f3f096d-a68b-485e-a468-017fb7a3228b">StructureDefinition-relationship.profile.ttl.html#/html/body/div/div/div/p/a at Line 2727, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-relationship.profile.xml.html#494d6854-aa31-4d4a-946d-8effa3aaa5ca">StructureDefinition-relationship.profile.xml.html#/html/body/div/div/div/p/a at Line 2807, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-life-status.change.history.html#ba1f57ed-ce66-4f3f-82b1-fd62850e722b">ValueSet-life-status.change.history.html#/html/body/div/div/div/p/a at Line 200, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-life-status.html#da66a980-0af2-4a09-a0a1-ff5e83a9d900">ValueSet-life-status.html#/html/body/div/div/div/p/a at Line 245, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-life-status.json.html#8a9f5941-712f-44d2-8f7e-608bd0c878fa">ValueSet-life-status.json.html#/html/body/div/div/div/p/a at Line 220, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-life-status.ttl.html#57bd4d8f-d15d-41f7-96b6-74d378cabc62">ValueSet-life-status.ttl.html#/html/body/div/div/div/p/a at Line 229, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-life-status.xml.html#6b4c60f4-0a96-4b8d-a537-6b5b742dcfd8">ValueSet-life-status.xml.html#/html/body/div/div/div/p/a at Line 216, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-relationship.change.history.html#18efb12a-df2c-466f-9a3b-336ac24067a0">ValueSet-relationship.change.history.html#/html/body/div/div/div/p/a at Line 200, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-relationship.html#e047079a-e4c2-4ba4-8448-a008c0513a75">ValueSet-relationship.html#/html/body/div/div/div/p/a at Line 245, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-relationship.json.html#9fc7e20e-baa3-4a97-b22c-75d8abaebf9c">ValueSet-relationship.json.html#/html/body/div/div/div/p/a at Line 220, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-relationship.ttl.html#7adcfffd-9700-4946-bba4-ef1e25fcd7e5">ValueSet-relationship.ttl.html#/html/body/div/div/div/p/a at Line 229, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-relationship.xml.html#aba43d1f-8159-4d7d-b648-5c97a9982c7e">ValueSet-relationship.xml.html#/html/body/div/div/div/p/a at Line 216, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="artifacts.html#cda74747-b084-4488-b9e0-728819ba1856">artifacts.html#/html/body/div/div/div/p/a at Line 478, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="index.html#6bdc0d51-29bb-48a3-b8de-05759f04b851">index.html#/html/body/div/div/div/p/a at Line 158, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="toc.html#7e7fd04d-52c2-4171-b5fb-a6275776847d">toc.html#/html/body/div/div/div/p/a at Line 136, column 28</a></b></td><td><b>error</b></td><td><b>The link 'meenchul@d3b.center' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_kimm11_Documents_workspace_liberaliscomputing_pedigree-fhir-ig_fsh-generated_resources_observation-relationship-example-1"> </a>
+<h2><a href="Observation-relationship-example-1.html">/Users/kimm11/Documents/workspace/liberaliscomputing/pedigree-fhir-ig/fsh-generated/resources/Observation-relationship-example-1.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Observation/relationship-example-1: Observation (l1/c2)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile https://liberaliscomputing.github.io/pedigree-fhir-ig/StructureDefinition/relationship</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Observation/relationship-example-1: Observation.value.ofType(CodeableConcept).coding[0] (l35/c8)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_kimm11_Documents_workspace_liberaliscomputing_pedigree-fhir-ig_fsh-generated_resources_observation-relationship-example-10"> </a>
+<h2><a href="Observation-relationship-example-10.html">/Users/kimm11/Documents/workspace/liberaliscomputing/pedigree-fhir-ig/fsh-generated/resources/Observation-relationship-example-10.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Observation/relationship-example-10: Observation (l1/c2)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile https://liberaliscomputing.github.io/pedigree-fhir-ig/StructureDefinition/relationship</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Observation/relationship-example-10: Observation.value.ofType(CodeableConcept).coding[0] (l35/c8)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_kimm11_Documents_workspace_liberaliscomputing_pedigree-fhir-ig_fsh-generated_resources_observation-relationship-example-11"> </a>
+<h2><a href="Observation-relationship-example-11.html">/Users/kimm11/Documents/workspace/liberaliscomputing/pedigree-fhir-ig/fsh-generated/resources/Observation-relationship-example-11.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Observation/relationship-example-11: Observation (l1/c2)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile https://liberaliscomputing.github.io/pedigree-fhir-ig/StructureDefinition/relationship</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Observation/relationship-example-11: Observation.value.ofType(CodeableConcept).coding[0] (l35/c8)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_kimm11_Documents_workspace_liberaliscomputing_pedigree-fhir-ig_fsh-generated_resources_observation-relationship-example-12"> </a>
+<h2><a href="Observation-relationship-example-12.html">/Users/kimm11/Documents/workspace/liberaliscomputing/pedigree-fhir-ig/fsh-generated/resources/Observation-relationship-example-12.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Observation/relationship-example-12: Observation (l1/c2)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile https://liberaliscomputing.github.io/pedigree-fhir-ig/StructureDefinition/relationship</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Observation/relationship-example-12: Observation.value.ofType(CodeableConcept).coding[0] (l35/c8)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_kimm11_Documents_workspace_liberaliscomputing_pedigree-fhir-ig_fsh-generated_resources_observation-relationship-example-13"> </a>
+<h2><a href="Observation-relationship-example-13.html">/Users/kimm11/Documents/workspace/liberaliscomputing/pedigree-fhir-ig/fsh-generated/resources/Observation-relationship-example-13.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Observation/relationship-example-13: Observation (l1/c2)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile https://liberaliscomputing.github.io/pedigree-fhir-ig/StructureDefinition/relationship</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Observation/relationship-example-13: Observation.value.ofType(CodeableConcept).coding[0] (l35/c8)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_kimm11_Documents_workspace_liberaliscomputing_pedigree-fhir-ig_fsh-generated_resources_observation-relationship-example-14"> </a>
+<h2><a href="Observation-relationship-example-14.html">/Users/kimm11/Documents/workspace/liberaliscomputing/pedigree-fhir-ig/fsh-generated/resources/Observation-relationship-example-14.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Observation/relationship-example-14: Observation (l1/c2)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile https://liberaliscomputing.github.io/pedigree-fhir-ig/StructureDefinition/relationship</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Observation/relationship-example-14: Observation.value.ofType(CodeableConcept).coding[0] (l35/c8)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_kimm11_Documents_workspace_liberaliscomputing_pedigree-fhir-ig_fsh-generated_resources_observation-relationship-example-15"> </a>
+<h2><a href="Observation-relationship-example-15.html">/Users/kimm11/Documents/workspace/liberaliscomputing/pedigree-fhir-ig/fsh-generated/resources/Observation-relationship-example-15.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Observation/relationship-example-15: Observation (l1/c2)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile https://liberaliscomputing.github.io/pedigree-fhir-ig/StructureDefinition/relationship</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Observation/relationship-example-15: Observation.value.ofType(CodeableConcept).coding[0] (l35/c8)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_kimm11_Documents_workspace_liberaliscomputing_pedigree-fhir-ig_fsh-generated_resources_observation-relationship-example-16"> </a>
+<h2><a href="Observation-relationship-example-16.html">/Users/kimm11/Documents/workspace/liberaliscomputing/pedigree-fhir-ig/fsh-generated/resources/Observation-relationship-example-16.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Observation/relationship-example-16: Observation (l1/c2)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile https://liberaliscomputing.github.io/pedigree-fhir-ig/StructureDefinition/relationship</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Observation/relationship-example-16: Observation.value.ofType(CodeableConcept).coding[0] (l35/c8)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_kimm11_Documents_workspace_liberaliscomputing_pedigree-fhir-ig_fsh-generated_resources_observation-relationship-example-2"> </a>
+<h2><a href="Observation-relationship-example-2.html">/Users/kimm11/Documents/workspace/liberaliscomputing/pedigree-fhir-ig/fsh-generated/resources/Observation-relationship-example-2.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Observation/relationship-example-2: Observation (l1/c2)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile https://liberaliscomputing.github.io/pedigree-fhir-ig/StructureDefinition/relationship</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Observation/relationship-example-2: Observation.value.ofType(CodeableConcept).coding[0] (l35/c8)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_kimm11_Documents_workspace_liberaliscomputing_pedigree-fhir-ig_fsh-generated_resources_observation-relationship-example-3"> </a>
+<h2><a href="Observation-relationship-example-3.html">/Users/kimm11/Documents/workspace/liberaliscomputing/pedigree-fhir-ig/fsh-generated/resources/Observation-relationship-example-3.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Observation/relationship-example-3: Observation (l1/c2)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile https://liberaliscomputing.github.io/pedigree-fhir-ig/StructureDefinition/relationship</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Observation/relationship-example-3: Observation.value.ofType(CodeableConcept).coding[0] (l35/c8)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_kimm11_Documents_workspace_liberaliscomputing_pedigree-fhir-ig_fsh-generated_resources_observation-relationship-example-4"> </a>
+<h2><a href="Observation-relationship-example-4.html">/Users/kimm11/Documents/workspace/liberaliscomputing/pedigree-fhir-ig/fsh-generated/resources/Observation-relationship-example-4.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Observation/relationship-example-4: Observation (l1/c2)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile https://liberaliscomputing.github.io/pedigree-fhir-ig/StructureDefinition/relationship</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Observation/relationship-example-4: Observation.value.ofType(CodeableConcept).coding[0] (l35/c8)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_kimm11_Documents_workspace_liberaliscomputing_pedigree-fhir-ig_fsh-generated_resources_observation-relationship-example-5"> </a>
+<h2><a href="Observation-relationship-example-5.html">/Users/kimm11/Documents/workspace/liberaliscomputing/pedigree-fhir-ig/fsh-generated/resources/Observation-relationship-example-5.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Observation/relationship-example-5: Observation (l1/c2)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile https://liberaliscomputing.github.io/pedigree-fhir-ig/StructureDefinition/relationship</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Observation/relationship-example-5: Observation.value.ofType(CodeableConcept).coding[0] (l35/c8)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_kimm11_Documents_workspace_liberaliscomputing_pedigree-fhir-ig_fsh-generated_resources_observation-relationship-example-6"> </a>
+<h2><a href="Observation-relationship-example-6.html">/Users/kimm11/Documents/workspace/liberaliscomputing/pedigree-fhir-ig/fsh-generated/resources/Observation-relationship-example-6.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Observation/relationship-example-6: Observation (l1/c2)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile https://liberaliscomputing.github.io/pedigree-fhir-ig/StructureDefinition/relationship</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Observation/relationship-example-6: Observation.value.ofType(CodeableConcept).coding[0] (l35/c8)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_kimm11_Documents_workspace_liberaliscomputing_pedigree-fhir-ig_fsh-generated_resources_observation-relationship-example-7"> </a>
+<h2><a href="Observation-relationship-example-7.html">/Users/kimm11/Documents/workspace/liberaliscomputing/pedigree-fhir-ig/fsh-generated/resources/Observation-relationship-example-7.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Observation/relationship-example-7: Observation (l1/c2)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile https://liberaliscomputing.github.io/pedigree-fhir-ig/StructureDefinition/relationship</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Observation/relationship-example-7: Observation.value.ofType(CodeableConcept).coding[0] (l35/c8)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_kimm11_Documents_workspace_liberaliscomputing_pedigree-fhir-ig_fsh-generated_resources_observation-relationship-example-8"> </a>
+<h2><a href="Observation-relationship-example-8.html">/Users/kimm11/Documents/workspace/liberaliscomputing/pedigree-fhir-ig/fsh-generated/resources/Observation-relationship-example-8.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Observation/relationship-example-8: Observation (l1/c2)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile https://liberaliscomputing.github.io/pedigree-fhir-ig/StructureDefinition/relationship</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Observation/relationship-example-8: Observation.value.ofType(CodeableConcept).coding[0] (l35/c8)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_kimm11_Documents_workspace_liberaliscomputing_pedigree-fhir-ig_fsh-generated_resources_observation-relationship-example-9"> </a>
+<h2><a href="Observation-relationship-example-9.html">/Users/kimm11/Documents/workspace/liberaliscomputing/pedigree-fhir-ig/fsh-generated/resources/Observation-relationship-example-9.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Observation/relationship-example-9: Observation (l1/c2)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile https://liberaliscomputing.github.io/pedigree-fhir-ig/StructureDefinition/relationship</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Observation/relationship-example-9: Observation.value.ofType(CodeableConcept).coding[0] (l35/c8)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_kimm11_Documents_workspace_liberaliscomputing_pedigree-fhir-ig_fsh-generated_resources_patient-individual-example-1"> </a>
+<h2><a href="Patient-individual-example-1.html">/Users/kimm11/Documents/workspace/liberaliscomputing/pedigree-fhir-ig/fsh-generated/resources/Patient-individual-example-1.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Patient/individual-example-1: Patient (l1/c2)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile https://liberaliscomputing.github.io/pedigree-fhir-ig/StructureDefinition/individual</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Patient/individual-example-1: Patient.extension[1].value.ofType(CodeableConcept).coding[0] (l18/c12)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_kimm11_Documents_workspace_liberaliscomputing_pedigree-fhir-ig_fsh-generated_resources_patient-individual-example-10"> </a>
+<h2><a href="Patient-individual-example-10.html">/Users/kimm11/Documents/workspace/liberaliscomputing/pedigree-fhir-ig/fsh-generated/resources/Patient-individual-example-10.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Patient/individual-example-10: Patient (l1/c2)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile https://liberaliscomputing.github.io/pedigree-fhir-ig/StructureDefinition/individual</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Patient/individual-example-10: Patient.extension[1].value.ofType(CodeableConcept).coding[0] (l18/c12)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_kimm11_Documents_workspace_liberaliscomputing_pedigree-fhir-ig_fsh-generated_resources_patient-individual-example-11"> </a>
+<h2><a href="Patient-individual-example-11.html">/Users/kimm11/Documents/workspace/liberaliscomputing/pedigree-fhir-ig/fsh-generated/resources/Patient-individual-example-11.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Patient/individual-example-11: Patient (l1/c2)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile https://liberaliscomputing.github.io/pedigree-fhir-ig/StructureDefinition/individual</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Patient/individual-example-11: Patient.extension[1].value.ofType(CodeableConcept).coding[0] (l18/c12)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_kimm11_Documents_workspace_liberaliscomputing_pedigree-fhir-ig_fsh-generated_resources_patient-individual-example-12"> </a>
+<h2><a href="Patient-individual-example-12.html">/Users/kimm11/Documents/workspace/liberaliscomputing/pedigree-fhir-ig/fsh-generated/resources/Patient-individual-example-12.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Patient/individual-example-12: Patient (l1/c2)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile https://liberaliscomputing.github.io/pedigree-fhir-ig/StructureDefinition/individual</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Patient/individual-example-12: Patient.extension[1].value.ofType(CodeableConcept).coding[0] (l18/c12)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_kimm11_Documents_workspace_liberaliscomputing_pedigree-fhir-ig_fsh-generated_resources_patient-individual-example-13"> </a>
+<h2><a href="Patient-individual-example-13.html">/Users/kimm11/Documents/workspace/liberaliscomputing/pedigree-fhir-ig/fsh-generated/resources/Patient-individual-example-13.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Patient/individual-example-13: Patient (l1/c2)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile https://liberaliscomputing.github.io/pedigree-fhir-ig/StructureDefinition/individual</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Patient/individual-example-13: Patient.extension[1].value.ofType(CodeableConcept).coding[0] (l18/c12)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_kimm11_Documents_workspace_liberaliscomputing_pedigree-fhir-ig_fsh-generated_resources_patient-individual-example-2"> </a>
+<h2><a href="Patient-individual-example-2.html">/Users/kimm11/Documents/workspace/liberaliscomputing/pedigree-fhir-ig/fsh-generated/resources/Patient-individual-example-2.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Patient/individual-example-2: Patient (l1/c2)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile https://liberaliscomputing.github.io/pedigree-fhir-ig/StructureDefinition/individual</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Patient/individual-example-2: Patient.extension[1].value.ofType(CodeableConcept).coding[0] (l18/c12)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_kimm11_Documents_workspace_liberaliscomputing_pedigree-fhir-ig_fsh-generated_resources_patient-individual-example-3"> </a>
+<h2><a href="Patient-individual-example-3.html">/Users/kimm11/Documents/workspace/liberaliscomputing/pedigree-fhir-ig/fsh-generated/resources/Patient-individual-example-3.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Patient/individual-example-3: Patient (l1/c2)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile https://liberaliscomputing.github.io/pedigree-fhir-ig/StructureDefinition/individual</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Patient/individual-example-3: Patient.extension[1].value.ofType(CodeableConcept).coding[0] (l18/c12)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_kimm11_Documents_workspace_liberaliscomputing_pedigree-fhir-ig_fsh-generated_resources_patient-individual-example-4"> </a>
+<h2><a href="Patient-individual-example-4.html">/Users/kimm11/Documents/workspace/liberaliscomputing/pedigree-fhir-ig/fsh-generated/resources/Patient-individual-example-4.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Patient/individual-example-4: Patient (l1/c2)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile https://liberaliscomputing.github.io/pedigree-fhir-ig/StructureDefinition/individual</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Patient/individual-example-4: Patient.extension[1].value.ofType(CodeableConcept).coding[0] (l18/c12)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_kimm11_Documents_workspace_liberaliscomputing_pedigree-fhir-ig_fsh-generated_resources_patient-individual-example-5"> </a>
+<h2><a href="Patient-individual-example-5.html">/Users/kimm11/Documents/workspace/liberaliscomputing/pedigree-fhir-ig/fsh-generated/resources/Patient-individual-example-5.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Patient/individual-example-5: Patient (l1/c2)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile https://liberaliscomputing.github.io/pedigree-fhir-ig/StructureDefinition/individual</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Patient/individual-example-5: Patient.extension[1].value.ofType(CodeableConcept).coding[0] (l18/c12)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_kimm11_Documents_workspace_liberaliscomputing_pedigree-fhir-ig_fsh-generated_resources_patient-individual-example-6"> </a>
+<h2><a href="Patient-individual-example-6.html">/Users/kimm11/Documents/workspace/liberaliscomputing/pedigree-fhir-ig/fsh-generated/resources/Patient-individual-example-6.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Patient/individual-example-6: Patient (l1/c2)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile https://liberaliscomputing.github.io/pedigree-fhir-ig/StructureDefinition/individual</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Patient/individual-example-6: Patient.extension[1].value.ofType(CodeableConcept).coding[0] (l18/c12)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_kimm11_Documents_workspace_liberaliscomputing_pedigree-fhir-ig_fsh-generated_resources_patient-individual-example-7"> </a>
+<h2><a href="Patient-individual-example-7.html">/Users/kimm11/Documents/workspace/liberaliscomputing/pedigree-fhir-ig/fsh-generated/resources/Patient-individual-example-7.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Patient/individual-example-7: Patient (l1/c2)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile https://liberaliscomputing.github.io/pedigree-fhir-ig/StructureDefinition/individual</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Patient/individual-example-7: Patient.extension[1].value.ofType(CodeableConcept).coding[0] (l18/c12)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_kimm11_Documents_workspace_liberaliscomputing_pedigree-fhir-ig_fsh-generated_resources_patient-individual-example-8"> </a>
+<h2><a href="Patient-individual-example-8.html">/Users/kimm11/Documents/workspace/liberaliscomputing/pedigree-fhir-ig/fsh-generated/resources/Patient-individual-example-8.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Patient/individual-example-8: Patient (l1/c2)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile https://liberaliscomputing.github.io/pedigree-fhir-ig/StructureDefinition/individual</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Patient/individual-example-8: Patient.extension[1].value.ofType(CodeableConcept).coding[0] (l18/c12)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_kimm11_Documents_workspace_liberaliscomputing_pedigree-fhir-ig_fsh-generated_resources_patient-individual-example-9"> </a>
+<h2><a href="Patient-individual-example-9.html">/Users/kimm11/Documents/workspace/liberaliscomputing/pedigree-fhir-ig/fsh-generated/resources/Patient-individual-example-9.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Patient/individual-example-9: Patient (l1/c2)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile https://liberaliscomputing.github.io/pedigree-fhir-ig/StructureDefinition/individual</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Patient/individual-example-9: Patient.extension[1].value.ofType(CodeableConcept).coding[0] (l18/c12)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+</table>
+<a name="suppressed"> </a>
+<p><b>Suppressed Messages (Warnings, hints, broken links)</b></p>
+<p>No suppressed messsages</p><a name="sorted"> </a>
+<p><b>Errors sorted by type</b></p>
+<hr/>
+<a name="TERMINOLOGY_TX_SYSTEM_NO_CODE"> </a>
+<h2>TERMINOLOGY_TX_SYSTEM_NO_CODE</h2>
+ <table class="grid">
+   <tr style="background-color: #fff4ee">
+     <td><a href="Observation-relationship-example-1.html">/Users/kimm11/Documents/workspace/liberaliscomputing/pedigree-fhir-ig/fsh-generated/resources/Observation-relationship-example-1.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Observation-relationship-example-10.html">/Users/kimm11/Documents/workspace/liberaliscomputing/pedigree-fhir-ig/fsh-generated/resources/Observation-relationship-example-10.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Observation-relationship-example-11.html">/Users/kimm11/Documents/workspace/liberaliscomputing/pedigree-fhir-ig/fsh-generated/resources/Observation-relationship-example-11.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Observation-relationship-example-12.html">/Users/kimm11/Documents/workspace/liberaliscomputing/pedigree-fhir-ig/fsh-generated/resources/Observation-relationship-example-12.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Observation-relationship-example-13.html">/Users/kimm11/Documents/workspace/liberaliscomputing/pedigree-fhir-ig/fsh-generated/resources/Observation-relationship-example-13.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Observation-relationship-example-14.html">/Users/kimm11/Documents/workspace/liberaliscomputing/pedigree-fhir-ig/fsh-generated/resources/Observation-relationship-example-14.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Observation-relationship-example-15.html">/Users/kimm11/Documents/workspace/liberaliscomputing/pedigree-fhir-ig/fsh-generated/resources/Observation-relationship-example-15.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Observation-relationship-example-16.html">/Users/kimm11/Documents/workspace/liberaliscomputing/pedigree-fhir-ig/fsh-generated/resources/Observation-relationship-example-16.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Observation-relationship-example-2.html">/Users/kimm11/Documents/workspace/liberaliscomputing/pedigree-fhir-ig/fsh-generated/resources/Observation-relationship-example-2.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Observation-relationship-example-3.html">/Users/kimm11/Documents/workspace/liberaliscomputing/pedigree-fhir-ig/fsh-generated/resources/Observation-relationship-example-3.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Observation-relationship-example-4.html">/Users/kimm11/Documents/workspace/liberaliscomputing/pedigree-fhir-ig/fsh-generated/resources/Observation-relationship-example-4.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Observation-relationship-example-5.html">/Users/kimm11/Documents/workspace/liberaliscomputing/pedigree-fhir-ig/fsh-generated/resources/Observation-relationship-example-5.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Observation-relationship-example-6.html">/Users/kimm11/Documents/workspace/liberaliscomputing/pedigree-fhir-ig/fsh-generated/resources/Observation-relationship-example-6.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Observation-relationship-example-7.html">/Users/kimm11/Documents/workspace/liberaliscomputing/pedigree-fhir-ig/fsh-generated/resources/Observation-relationship-example-7.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Observation-relationship-example-8.html">/Users/kimm11/Documents/workspace/liberaliscomputing/pedigree-fhir-ig/fsh-generated/resources/Observation-relationship-example-8.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Observation-relationship-example-9.html">/Users/kimm11/Documents/workspace/liberaliscomputing/pedigree-fhir-ig/fsh-generated/resources/Observation-relationship-example-9.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Patient-individual-example-1.html">/Users/kimm11/Documents/workspace/liberaliscomputing/pedigree-fhir-ig/fsh-generated/resources/Patient-individual-example-1.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Patient-individual-example-10.html">/Users/kimm11/Documents/workspace/liberaliscomputing/pedigree-fhir-ig/fsh-generated/resources/Patient-individual-example-10.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Patient-individual-example-11.html">/Users/kimm11/Documents/workspace/liberaliscomputing/pedigree-fhir-ig/fsh-generated/resources/Patient-individual-example-11.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Patient-individual-example-12.html">/Users/kimm11/Documents/workspace/liberaliscomputing/pedigree-fhir-ig/fsh-generated/resources/Patient-individual-example-12.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Patient-individual-example-13.html">/Users/kimm11/Documents/workspace/liberaliscomputing/pedigree-fhir-ig/fsh-generated/resources/Patient-individual-example-13.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Patient-individual-example-2.html">/Users/kimm11/Documents/workspace/liberaliscomputing/pedigree-fhir-ig/fsh-generated/resources/Patient-individual-example-2.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Patient-individual-example-3.html">/Users/kimm11/Documents/workspace/liberaliscomputing/pedigree-fhir-ig/fsh-generated/resources/Patient-individual-example-3.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Patient-individual-example-4.html">/Users/kimm11/Documents/workspace/liberaliscomputing/pedigree-fhir-ig/fsh-generated/resources/Patient-individual-example-4.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Patient-individual-example-5.html">/Users/kimm11/Documents/workspace/liberaliscomputing/pedigree-fhir-ig/fsh-generated/resources/Patient-individual-example-5.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Patient-individual-example-6.html">/Users/kimm11/Documents/workspace/liberaliscomputing/pedigree-fhir-ig/fsh-generated/resources/Patient-individual-example-6.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Patient-individual-example-7.html">/Users/kimm11/Documents/workspace/liberaliscomputing/pedigree-fhir-ig/fsh-generated/resources/Patient-individual-example-7.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Patient-individual-example-8.html">/Users/kimm11/Documents/workspace/liberaliscomputing/pedigree-fhir-ig/fsh-generated/resources/Patient-individual-example-8.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Patient-individual-example-9.html">/Users/kimm11/Documents/workspace/liberaliscomputing/pedigree-fhir-ig/fsh-generated/resources/Patient-individual-example-9.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Terminology_TX_System_NotKnown"> </a>
+<h2>Terminology_TX_System_NotKnown</h2>
+ <table class="grid">
+   <tr style="background-color: #fffff2">
+     <td><a href="Condition-condition-example-1.html">/Users/kimm11/Documents/workspace/liberaliscomputing/pedigree-fhir-ig/fsh-generated/resources/Condition-condition-example-1.json</a></td><td><b>Code System URI 'http://purl.obolibrary.org/obo/hp.owl' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Condition-condition-example-1.html">/Users/kimm11/Documents/workspace/liberaliscomputing/pedigree-fhir-ig/fsh-generated/resources/Condition-condition-example-1.json</a></td><td><b>Code System URI 'http://purl.obolibrary.org/obo/uberon.owl' is unknown so the code cannot be validated</b></td>
+   </tr>
+</table>
+</body>
+</html>

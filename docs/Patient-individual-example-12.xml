@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Patient xmlns="http://hl7.org/fhir">
+  <id value="individual-example-12"/>
+  <meta>
+    <profile value="https://liberaliscomputing.github.io/pedigree-fhir-ig/StructureDefinition/individual"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>Affected</b>: true</p><p><b>genderIdentity</b>: <span title="Codes: ">male</span></p><p><b>Life Status</b>: alive</p><p><b>identifier</b>: id: 12</p><p><b>gender</b>: male</p></div>
+  </text>
+  <extension url="https://liberaliscomputing.github.io/pedigree-fhir-ig/StructureDefinition/affected">
+    <valueBoolean value="true"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/patient-genderIdentity">
+    <valueCodeableConcept>
+      <coding>
+        <code value="male"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <extension url="https://liberaliscomputing.github.io/pedigree-fhir-ig/StructureDefinition/life-status">
+    <valueCode value="alive"/>
+  </extension>
+  <identifier>
+    <system value="urn:pedigree-fhir-ig:unique-string/individual"/>
+    <value value="12"/>
+  </identifier>
+  <gender value="male"/>
+</Patient>

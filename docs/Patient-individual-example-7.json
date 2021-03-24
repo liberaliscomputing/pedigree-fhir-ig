@@ -1,0 +1,40 @@
+{
+  "resourceType": "Patient",
+  "id": "individual-example-7",
+  "meta": {
+    "profile": [
+      "https://liberaliscomputing.github.io/pedigree-fhir-ig/StructureDefinition/individual"
+    ]
+  },
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>Affected</b>: true</p><p><b>genderIdentity</b>: <span title=\"Codes: \">female</span></p><p><b>Life Status</b>: alive</p><p><b>identifier</b>: id: 7</p><p><b>gender</b>: female</p></div>"
+  },
+  "extension": [
+    {
+      "url": "https://liberaliscomputing.github.io/pedigree-fhir-ig/StructureDefinition/affected",
+      "valueBoolean": true
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/patient-genderIdentity",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "female"
+          }
+        ]
+      }
+    },
+    {
+      "url": "https://liberaliscomputing.github.io/pedigree-fhir-ig/StructureDefinition/life-status",
+      "valueCode": "alive"
+    }
+  ],
+  "identifier": [
+    {
+      "system": "urn:pedigree-fhir-ig:unique-string/individual",
+      "value": "7"
+    }
+  ],
+  "gender": "female"
+}
